@@ -4,7 +4,7 @@
 
 The topic of application is to develop a voice-driven web software to recommend personalized contents to the user, who drive the car on the road, based on the user's location and personal interesting topics. The process of the system could be shown in Firgure 1.
 
-![](./Documentation/Flow Chart.png)
+![](./Documentation/FlowChart.png)
 
 Figure 1. The flow chart of the system
 

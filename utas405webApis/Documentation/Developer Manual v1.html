@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/*color: #D9DCD6 #81C3D7 #3A7CA5 #2F6690 #16425B*/
+	/*wikiHow: #ecebe8 #363 #545454 #F6F5F4 #ECEBE8*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #ecebe8;
+		}
+		ul.fl_l{
+			list-style: none;
+			-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+			border-radius: 5px;
+		}
+		.fl_l{
+			width: 200px;
+			float: left;
+			border: 1px solid #f4f4f4;
+			/*background: #fff;*/
+			position:fixed !important;
+		}
+		.fl_l li {
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+		.fl_l li a{
+			border-bottom: 1px solid #eee;
+			text-align: left;
+			display: block;
+			color: #333;
+			font-size: 18px;
+			line-height: 60px;
+			background: #363;
+			color: #D9DCD6;
+			border-radius: 5px;
+			text-decoration: none;
+			padding-left: 25px;
+		}
+		.fl_r{
+			/*float: right;*/
+			margin-left: 200px;
+			/*margin-right: 5000px;*/
+			-webkit-box-shadow: none;
+			width: 78%;
+		}
+		div {
+			-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+			word-wrap: break-word;
+			/*word-break: break-all;*/
+			width:98%;
+			padding:1%;
+			white-space: normal;
+			margin-bottom: 4px;
+			border-radius: 5px;
+		}
+		div.box{
+			-webkit-box-shadow: none;
+		}
+		.charter{
+			/*background: #81C3D7;*/
+			margin-bottom: 20px;
+			padding: 15px;
+			background-color: #ffffff;
+			-webkit-border-radius: 0 0 4px 4px;
+		}
+		h1{
+			margin-bottom: 30px;
+		}
+		h2{
+			background-color: #B4B4B4;
+			-webkit-border-radius: 4px 4px 0 0;
+			z-index: 3;
+			margin-top: 10px;
+			width: 99%;
+			padding: 10px;
+		}
+		h3{
+			padding-bottom: 10px;
+		}
+		p{
+			margin-bottom: 5px;
+			margin-top: 10px;
+		}
+		li {
+			margin-left: 5%;
+			margin-bottom: 5px;
+		}
+		b {
+			font:25px;
+			font-weight: 900;
+			color:#E22C14;
+		}
+		img{
+			margin-left: 5%;
+			background: white;
+			padding: 15px;
+			border-radius: 5px;
+		}
+		div.point {
+			-webkit-box-shadow: none;
+			border-radius: 5px;
+			/*background: #B0CCA8;*/
+			background: #DDDDDD;
+			border: 1px dotted #785;
+		}
+		pre {
+			/*font-size: 12px;*/
+			padding: 10px;
+			margin: 0;
+			background: #f6f8fa;
+			overflow: auto; 
+			overflow-Y:hidden;
+			border-left: 4px solid #4CAF50; 
+		}
+		.l2 {
+			padding-left: 20px;
+		}
+
+</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="fl_l">
+			<li><a href="#1">1. Allocation Topic</a></li>
+			<li><a href="#2">2. Web Service </a></li>
+			<li><a href="#2.1">2.1 Webspeech API</a></li>
+			<li><a href="#2.2">2.2 GEO API</a></li>
+			<li><a href="#2.3">2.3 Place API</a></li>
+			<li><a href="#2.4">2.4 Twitter API</a></li>
+			<li><a href="#3">3. Dialog Scripts 1</a></li>
+			<li><a href="#4">4. Dialog Scripts 2</a></li>
+			<li><a href="#5">5. AI Techniques</a></li>
+			<li><a href="#6">6. Past User's Data</a></li>
+			<li><a href="#7">7. Other issues</a></li>
+		</ul>
+		<div class="fl_r">
+			<h1 align="center">Developer Manual </h1>
+			<h2 id="1">1. Allocation Topic - Social Search</h2>
+			<div class="charter" >
+				<p>
+					The topic of application is to develop a voice-driven web software to recommend personalized contents to the user, who drive the car on the road, based on the user's location and personal interesting topics. The process of the system could be shown in Firgure 1.
+				</p>
+				<img width="60%" src="./Flow Chart.png">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Figure 1. The flow chart of the system</p>
+			</div>
+			<h2 id="2">2. Web Service (API)</h2>
+			<div class="charter">
+				<p>The Web Services have been used in this project are as follows:</p>
+				<ul>
+					<li>Webspeech API</li>
+					<li>GEO API</li>
+					<li>Place API</li>
+						<ul>
+							<li class="l2">User name: chaofanz.405</li>
+							<li class="l2">Password: class405</li>
+						</ul>
+					<li>Twitter API</li>
+						<ul>
+							<li class="l2">User name: chaofanz_405</li>
+							<li class="l2">Password: class405</li>
+						</ul>
+
+				</ul>
+			</div>
+
+			<h2 id="2.1">2.1 Webspeech API</h2>
+			<div class="charter" >
+				It is used for oral communication between the user and the system. Some of the codes are as follows:
+<pre>
+...
+$.ajaxSetup({async: false});
+$.get("./senti_php/examples/senti.php",{dialog:dialog},function(data){
+  console.log(data);
+  var senti = data.slice(0,8);
+  console.log(senti);
+  var dialog = data.slice(8);
+  console.log(dialog);
+  if (senti=='&lt;pre&gt;neg') {
+    aText = 'That sounds bad.';
+    if(dialog=='I am sad'){
+      aText = 'That sounds bad. May be try some delicious foods?';
+    }else if (dialog == 'not for game now') {
+      aText = 'Then how about some news about movie?';
+    }else{
+      aText = 'Sorry, the system could not find anything for you.';
+    }
+  } else if (senti =='&lt;pre&gt;pos') {
+    aText = "that's great.";
+    if (dialog=='I am happy') {
+      aText = 'You seems have a good day. Would you like to listen to some news about game?';
+    }else if (dialog == 'movie sounds good') {
+      aText = 'I am searching, it may take a little long.';
+      keyword='movie';
+      getLocation();
+    }else if (dialog == 'music sounds good') {
+      aText = 'I am searching, it may take a little long.';
+      keyword='music';
+      getLocation();
+    }else{
+      aText = 'Sorry, the system could not find anything for you.';
+    }
+  } else {
+    aText = 'Maybe try to have a rest';
+    if(dialog == 'I would have a try' ){
+      keyword = 'restaurant';
+      getLocation();
+      aText = 'I am searching, it may take a little long.';
+    }else if (dialog == 'I would not have a try') {
+      aText = 'Try to have a relax';
+    }else if (dialog == 'game sounds good'){
+      aText = 'I am searching, it may take a little long.';
+      keyword='game';
+      getLocation();
+    }else if (dialog == 'not for movie now') {
+      aText = 'Would you like to know some news about music?';
+    }else if (dialog == 'not for music now') {
+      aText = 'Try to have a rest is a good chioce for you';
+    }else{
+      aText = 'Sorry, the system could not find anything for you.';
+    }
+  }
+...
+</pre></div>
+	<h2 id="2.2">2.2 Geo API </h2>
+	<div class="charter">		It is used for getting the longtitude and latitude of the user's location. Some of the codes are as follows:
+<pre>
+function getLocation() {
+    if (navigator.geolocation) {
+        var latlon = navigator.geolocation.getCurrentPosition(showPosition, showGeoError);
+    } else {
+        var text =  "Geolocation is not supported by this browser.";
+        return text;
+    }
+}
+
+function showPosition(position) {
+    latlon = position.coords.latitude + "," + position.coords.longitude;
+    $.ajaxSetup({async: false});
+    $.get("./handler.php",{latlon:latlon,keyword:keyword},function(data){
+      console.log(data);
+      var u = new SpeechSynthesisUtterance();
+      u.text = data;
+      u.lang = 'en-AU';
+      u.rate = 1;
+      u.volume=1;
+      speechSynthesis.speak(u);
+
+    });
+}
+
+function showGeoError(error) {
+    var u = new SpeechSynthesisUtterance();
+    u.text = '';
+    u.lang = 'en-AU';
+    u.rate = 1;
+    u.volume=1;
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            u.text = "The Geolocation cannot be acquired because of the request are denied."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            u.text = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            u.text = "The request to get the location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            u.text = "An unknown error occurred."
+            break;
+    }
+    speechSynthesis.speak(u);
+}
+</pre></div>
+				<h2 id="2.3">2.3 Place API</h2>
+				<div class="charter">
+				It is used for getting the name of places based on user's interesting and location(longtitde and latitude).
+<pre>
+function readdata($url)
+{
+	//put your api key 
+	$apikey="AIzaSyDnuQrr0vlEa4SeLUHoiByspd1GXPjXdfA";
+	
+	$curl = curl_init();
+	$url = $url."&amp;key=$apikey";
+	curl_setopt($curl, CURLOPT_URL, $url);
+	
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+	curl_setopt($curl, CURLOPT_SSLVERSION, 1);
+	
+	$contents = curl_exec($curl);
+	return $contents;
+}
+
+function getPlaceList($latlon,$type)
+{
+	$contents = readdata("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=".$latlon."&amp;radius=100000&amp;type=".$keyw); 
+	
+	$contents =json_decode($contents);
+	$place= $contents->results;
+	
+	$placeList = array(); 
+	foreach($place as $value)
+	{
+		$name=$value->name;
+		array_push($placeList,$name);
+	}
+	
+	return $placeList;
+}
+</pre>
+				</div>
+				<h2 id="2.4">2.4 Twitter API</h2>
+				<div class="charter">
+					It is used for capturing tweets in Twitter that the user might feel interested. 
+<pre>
+function getTwitterContent($keyword,$latlon)
+{
+	$geocode = $latlon.",10mi";
+	$geocode = str_replace(',','%2C',$geocode);
+	$keyw=$keyword;
+	
+	require_once('./twitteroauth/twitteroauth.php');
+	require_once('./config.php');
+
+		/* If access tokens are not available redirect to connect page. */
+		if (empty($_SESSION['access_token']) || empty($_SESSION['access_token']['oauth_token']) || empty($_SESSION['access_token']['oauth_token_secret'])) {
+			//    header('Location: ./clearsessions.php');
+		}
+		/* Get user access tokens out of the session. */
+			
+		$access_token = $_SESSION['access_token'];
+		
+		/* Create a TwitterOauth object with consumer/user tokens. */
+		
+		//Caren's comment - I changed a code a little bit. The consumer_key, consumer_scecret, access_key, and access_secret are defined from config.php
+		//So you should define those variables from the config.php (DO NOT Change the following)
+		$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET);
+		/* If method is set change API call made. Test is called by default. */
+	
+		$contents = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=".$keyw."&amp;geocode=".$geocode."&amp;count=100");
+		$result = array();
+		$contents = $contents->statuses;
+
+		// Pass the tweets to the build model to check whether the user will read the tweet.
+		foreach ($contents as $content) {
+			$language = $content->lang;
+			$text = $content->text;
+			$retweetCount = $content->retweet_count;
+			if(strpos($text,'#')!==false){
+				if ($language=='en'){
+					if ($retweetCount > 2){
+						array_push($result, $text);
+					} elseif (strlen($text)<=85) {
+						array_push($result, $text);
+					}
+				}
+			}
+		}
+
+		$decode=$contents;
+		return $result;
+}
+</pre>
+				</div>
+			<h2 id="3">3. Dialog Scripts 1</h2>
+			<div class="charter">
+<pre>
+[When the user starts a system]
+System: Hello Master. How are you doing today?
+User: I am sad.
+System: That sounds bad. May be try some delicious foods? 
+	If the user say yes: I would have a try.
+		System: I am searching, it may take a little long. ... The place I would recommend is {{place}}. The comments about the place in Twitter is {{tweet content}}.
+	If the user say no: I would not have a try.
+		System: Try to have a relax.
+</pre>				
+			</div>
+			<h2 id="4">4. Dialog Scripts 2</h2>
+			<div class="charter">
+<pre>
+[When the user starts a system]
+System: Hello Master. How are you doing today?
+User: I am happy.
+System: You seems have a good day. Would you like to listen to some news about game?
+If the user say yes: game sounds good.
+	System: I am searching, it may take a little long. ... The new I would recommend is {{tweet content}}.
+If the user say no: not for game now.
+	System: Then how about some news about movie?
+	If the user say yes: movie sounds good.
+		System: I am searching, it may take a little long. ... The new I would recommend is {{tweet content}}
+	If the user say no: not for movie now.
+		System: Would you like to know some news about music? 
+		If the user say yes: music sounds good.
+			System: I am searching, it may take a little long. ... The new I would recommend is {{tweet content}}
+		If the user say no: not for music now.
+			System: Try to have a rest is a good chioce for you.	
+</pre>				
+			</div>
+
+			<h2 id="5">5. AI Techniques</h2>
+			<div class="charter" >
+				<p>The AI techniques have been used in this project are as follows:</p>
+				<div class="point">
+					<h3>1. Natrual Language Process - Sentiment Analysis</h3>
+					<p>
+						It is used to judege the mood of the user during the interaction with the system. Based on the sentiment factors of different words in the users' speech, the system could identify the users' dialog is positive, negative or neutral. Therefore the system could give different responses based on the user's words. 
+					</p>
+					<p>The main file of the system is: <a href="../Application/src/senti_php/examples/senti.php">senti.php</a></p>
+					<ul>
+						<li><b>Input: </b>a string</li>
+						<li><b>Input: </b>pos, neg or neu</li>
+					</ul>
+					<p>
+						For example:
+					</p>
+					<ul>
+						<li>
+							The user says: "I am happy."
+						</li>
+						<ul><li>The system: "You seems have a good day. "</li></ul>
+						<li>
+							The user says: "I am sad."
+						</li>
+						<ul><li>The system: "That sounds bad."</li></ul>
+					</ul>
+				</div>
+				<div class="point">
+					<h3>2. Recommendation System:</h3>
+					<p>A recommendation system would be used to generate the places that the user may be interested based on the data of other people, who are similar to the user. </p>
+					<ul>
+						<li>
+							<p><b>Input: </b>the user's name and a list of other people's data (<a href="../Application/src/item_based/sample_list.php">sample_list</a>)</p>
+						</li>
+						<li>
+							<p><b>Output: </b>The outcome of the recommendation system is a list of places that the user may be interested. These places will be matched with the places of the user's location, which are generated by the Place API. </p>
+						</li>
+					</ul>
+					<p>The code of the system is in the<a href="../Application/src/item_based"> item_based folder</a></p>
+				</div>
+				<div class="point">
+					<h3>3. Decision Tree Model</h3>
+					<p>There is a decision tree model built by Weka J48 to check whether the user would read a tweet or not, based on the user's previous historic records (<a href="../application/data/twitterModel4.arff">twitterModel4.arff</a>).</p>
+					<ul>
+						<li><b>Input: </b> a tweet </li>
+						<li><b>Output: </b> True or False to show whether the user read or not</li>	
+					</ul>
+					<img width="90%" src="./twitterModel.png">
+				</div>
+			</div>
+			<h2 id="6">6. Past User's Behaviour Data </h2>
+			<div class="charter" >
+				<div class="point">
+					<b><h3>Pre-defined User's Interested Topics and Place Type</h3></b>
+					<p>In this case, I pre-define the user's interesting topics are: game, movie, music, whichi will be used in the Twitter API to search the tweets for meeting the user's interesting.</p>
+					<p>I also pre-define the user's interesting place type is restaurant, which will be used in the Place API and recommendation system.</p>
+					<p>In the further development, the system could get the user's interning topcis and place types based on the analysis of the words and sentences from the user.</p>
+				</div>
+				<div class="point">
+					<b><h3>Sample Data for Recommendation System</h3></b>
+					<p>The recommendation system need have records of other people about their rates of different places. In this case, it is the number of different restaurants. Based on these data, the recommendation system could have a list of places that could be recommended to the user. </p>
+					<p>The file of the data is <a href="../Application/src/item_based/sample_list.php">sample_list</a></p>
+					<p>Parf of the records could be as follows: </p>
+<pre>
+$restaurants =  array(
+    
+    "Shuang" => array("Customs House Hotel" => 2.5, "The Old Woolstore Apartment Hotel" => 3.5,
+                    "The Henry Jones Art Hotel" => 3, "Annapurna Indian Cuisine" => 4,
+                    "Salamanca Inn" => 2.5,
+                    "Hearth Pizza &amp; Small Plates" => 3.5),
+    
+    "Alex" => array("The Waratah Hotel" => 2.5, "The Old Woolstore Apartment Hotel" => 3.5,
+                      "Riversdale Estate French Bistro, High Tea Orangery &amp; Peter Rabbit Garden" => 3, "Annapurna Indian Cuisine" => 3.5,
+                      "Salamanca Inn" => 2.5, "Hearth Pizza &amp; Small Plates" => 1),
+</pre>
+				</div>
+				<div class="point">
+					<b><h3>History of Reading Tweets</h3></b>
+					<p>There are list of user's reading records of tweets to be used to generate a decision tree model. The feature of this data are </p>
+					<ul>
+						<li><b>twitterLength: </b> It is a number about the lenght of the tweet. Records are numbers.</li>
+						<li><b>haveKeyword: </b> This will check whether the tweet has the keywords of the user's interested topics (game, movie, music in this case). Records are TRUE or FAlSE. </li>
+						<li><b>language: </b> This is the lanugage of the tweet, normally is en as English. But some user may prefer for zh as Chinese or other languages. Reocrds are "en,und,fr,de,ja,zh" (und as undefined) </li>
+						<li><b>followersCount: </b>This is the followers of the user who publish the tweet. Records are numbers.</li>
+						<li><b>retweetCount: </b>Tis is the number of tweets that retweet the original tweet. Reocrds are numbers.</li>
+						<li><b>favoriteCount: </b>This is the number of people who favorite the tweet. Records are numbers.</li>
+						<li><b>haveHash: </b>This is about whether the tweet has a "#" hash tag. Records are TRUE or FALSE.</li>
+						<li><b>read: </b>This is about whether the user read the tweet or not. Records are TRUE or False.</li>
+					</ul>
+					<p>Although there are only "hasHash", "language", "retweetCount" and "twitterLength" used in this case, the model for other users maybe different, which may use all of the features mentioned above.</p>
+					<p>The file of the data is <a href="../Application/data/twitterModel4.arff">sample_list</a></p>
+					<p>A sample of the records could be generated by <a href="../Application/src/userDataGenerator.php">userDataGenerator.php</a></p>
+					<p>Some records could be as follows: </p>
+<pre>
+@relation twitterModel 
+
+@attribute twitterLength real 
+@attribute haveKeyword {TRUE,FALSE}
+@attribute language {en,und,fr,de,ja,zh}
+@attribute followersCount real 
+@attribute retweetCount real
+@attribute favoriteCount real
+@attribute haveHash {TRUE, FALSE}
+@attribute read {TRUE, FALSE}
+
+@data
+34, TRUE, en, 292, 0, 0, FALSE, FALSE
+117, TRUE, en, 292, 0, 0, FALSE, FALSE
+44, TRUE, en, 342, 0, 0, FALSE, FALSE
+107, TRUE, en, 367, 0, 0, FALSE, FALSE
+58, FALSE, en, 433, 0, 0, FALSE, FALSE
+65, TRUE, en, 463, 0, 0, FALSE, FALSE
+123, TRUE, en, 473, 0, 0, FALSE, FALSE
+39, TRUE, en, 518, 0, 0, FALSE, FALSE
+139, TRUE, en, 570, 0, 0, FALSE, FALSE
+43, TRUE, en, 599, 0, 0, FALSE, FALSE
+92, TRUE, en, 599, 0, 0, FALSE, FALSE
+93, TRUE, en, 603, 0, 0, FALSE, FALSE
+33, FALSE, en, 623, 0, 0, FALSE, FALSE
+</pre>
+				</div>
+			</div>
+			<h2 id="7">7. Other issues </h2>
+			<div class="charter" >
+				<div class="point">
+					<h3>News API</h3>
+					The news API doesn't work as expected due to the fact that many services providers are charging for the services. Therefore, it is not suitable for this project.
+				</div>
+				<div class="point">
+					<h3>Twitter Results</h3>
+					Unlike the news from news API, the text in tweets are short and sometimes with symbols and hashtags. Combining with the limitation of time, the result of the recommended tweets, sometimes, could wired and non-sense. Therefore, the further development should consider rules to rule out some wired tweets.
+				</div>
+				<div class="point">
+					<h3>Change of Scope</h3>
+					Due to the lack of news APi and the limitation of time, the scope of the project has changed from location-based event recommendation to location-based tweet recommendation. As the original project requiring keywords and location terms from news to identify events, the text in tweets are short and miss factors like keywords and location terms, which means hard to identify events from Twitter. Therefore, the scope of the project narrow down to just recommend tweets to the user based on the user's location and interesting topics.
+				</div>
+				<div class="point">
+					<h3>Change of Radius</h3>
+					Because the original setting of radius (1ms) in Twitter API could not acquire any tweets in the test location, the redius of the system has changed to 10 ms, which could get some results as expected.
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

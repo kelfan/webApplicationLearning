@@ -1,0 +1,7 @@
+user's interesting topics: 
+	movie
+	game
+	music 
+
+user's interesting placy type: 
+	restaurant

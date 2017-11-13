@@ -309,8 +309,9 @@ The recommendation system need have records of other people about their rates of
 
 The file of the data is [sample_list](./Application/src/item_based/sample_list.php)
 
-Parf of the records could be as follows:
+Part of the records could be as follows:
 
+```javascript
 $restaurants =  array(
 
     "Shuang" => array("Customs House Hotel" => 2.5, "The Old Woolstore Apartment Hotel" => 3.5,
@@ -321,6 +322,8 @@ $restaurants =  array(
     "Alex" => array("The Waratah Hotel" => 2.5, "The Old Woolstore Apartment Hotel" => 3.5,
                       "Riversdale Estate French Bistro, High Tea Orangery & Peter Rabbit Garden" => 3, "Annapurna Indian Cuisine" => 3.5,
                       "Salamanca Inn" => 2.5, "Hearth Pizza & Small Plates" => 1),
+)
+```
 
 ### History of Reading Tweets
 

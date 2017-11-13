@@ -15,20 +15,14 @@ The Web Services have been used in this project are as follows:
 *   Webspeech API
 *   GEO API
 *   Place API
-
-*   User name: chaofanz.405
-*   Password: class405
-
 *   Twitter API
 
-*   User name: chaofanz_405
-*   Password: class405
 
 ## 2.1 Webspeech API
 
 It is used for oral communication between the user and the system. Some of the codes are as follows:
 
-...
+```javascript
 $.ajaxSetup({async: false});
 $.get("./senti_php/examples/senti.php",{dialog:dialog},function(data){
   console.log(data);
@@ -80,12 +74,13 @@ $.get("./senti_php/examples/senti.php",{dialog:dialog},function(data){
       aText = 'Sorry, the system could not find anything for you.';
     }
   }
-...
+}
+```
 
 ## 2.2 Geo API
 
 It is used for getting the longtitude and latitude of the user's location. Some of the codes are as follows:
-
+```javascript
 function getLocation() {
     if (navigator.geolocation) {
         var latlon = navigator.geolocation.getCurrentPosition(showPosition, showGeoError);
@@ -132,14 +127,15 @@ function showGeoError(error) {
     }
     speechSynthesis.speak(u);
 }
+```
 
 ## 2.3 Place API
 
 It is used for getting the name of places based on user's interesting and location(longtitde and latitude).
-
+```javascript
 function readdata($url)
 {
-	//put your api key 
+	//put your api key
 	$apikey="AIzaSyDnuQrr0vlEa4SeLUHoiByspd1GXPjXdfA";
 
 	$curl = curl_init();
@@ -155,12 +151,12 @@ function readdata($url)
 
 function getPlaceList($latlon,$type)
 {
-	$contents = readdata("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=".$latlon."&radius=100000&type=".$keyw); 
+	$contents = readdata("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=".$latlon."&radius=100000&type=".$keyw);
 
 	$contents =json_decode($contents);
 	$place= $contents->results;
 
-	$placeList = array(); 
+	$placeList = array();
 	foreach($place as $value)
 	{
 		$name=$value->name;
@@ -169,11 +165,12 @@ function getPlaceList($latlon,$type)
 
 	return $placeList;
 }
+```
 
 ## 2.4 Twitter API
 
 It is used for capturing tweets in Twitter that the user might feel interested.
-
+```javascript
 function getTwitterContent($keyword,$latlon)
 {
 	$geocode = $latlon.",10mi";
@@ -221,20 +218,22 @@ function getTwitterContent($keyword,$latlon)
 		$decode=$contents;
 		return $result;
 }
+```
 
 ## 3\. Dialog Scripts 1
-
+```
 [When the user starts a system]
 System: Hello Master. How are you doing today?
 User: I am sad.
-System: That sounds bad. May be try some delicious foods? 
+System: That sounds bad. May be try some delicious foods?
 	If the user say yes: I would have a try.
 		System: I am searching, it may take a little long. ... The place I would recommend is {{place}}. The comments about the place in Twitter is {{tweet content}}.
 	If the user say no: I would not have a try.
 		System: Try to have a relax.
+```
 
 ## 4\. Dialog Scripts 2
-
+```
 [When the user starts a system]
 System: Hello Master. How are you doing today?
 User: I am happy.
@@ -246,12 +245,12 @@ If the user say no: not for game now.
 	If the user say yes: movie sounds good.
 		System: I am searching, it may take a little long. ... The new I would recommend is {{tweet content}}
 	If the user say no: not for movie now.
-		System: Would you like to know some news about music? 
+		System: Would you like to know some news about music?
 		If the user say yes: music sounds good.
 			System: I am searching, it may take a little long. ... The new I would recommend is {{tweet content}}
 		If the user say no: not for music now.
-			System: Try to have a rest is a good chioce for you.	
-
+			System: Try to have a rest is a good chioce for you.
+```
 ## 5\. AI Techniques
 
 The AI techniques have been used in this project are as follows:
@@ -296,7 +295,7 @@ There is a decision tree model built by Weka J48 to check whether the user would
 
 ## 6\. Past User's Behaviour Data
 
- **### Pre-defined User's Interested Topics and Place Type** 
+ **### Pre-defined User's Interested Topics and Place Type**
 
 In this case, I pre-define the user's interesting topics are: game, movie, music, whichi will be used in the Twitter API to search the tweets for meeting the user's interesting.
 
@@ -304,7 +303,7 @@ I also pre-define the user's interesting place type is restaurant, which will be
 
 In the further development, the system could get the user's interning topcis and place types based on the analysis of the words and sentences from the user.
 
- **### Sample Data for Recommendation System** 
+ **### Sample Data for Recommendation System**
 
 The recommendation system need have records of other people about their rates of different places. In this case, it is the number of different restaurants. Based on these data, the recommendation system could have a list of places that could be recommended to the user.
 
@@ -323,7 +322,7 @@ $restaurants =  array(
                       "Riversdale Estate French Bistro, High Tea Orangery & Peter Rabbit Garden" => 3, "Annapurna Indian Cuisine" => 3.5,
                       "Salamanca Inn" => 2.5, "Hearth Pizza & Small Plates" => 1),
 
- **### History of Reading Tweets** 
+ **### History of Reading Tweets**
 
 There are list of user's reading records of tweets to be used to generate a decision tree model. The feature of this data are
 
@@ -343,13 +342,13 @@ The file of the data is [sample_list](../Application/data/twitterModel4.arff)
 A sample of the records could be generated by [userDataGenerator.php](../Application/src/userDataGenerator.php)
 
 Some records could be as follows:
+```
+@relation twitterModel
 
-@relation twitterModel 
-
-@attribute twitterLength real 
+@attribute twitterLength real
 @attribute haveKeyword {TRUE,FALSE}
 @attribute language {en,und,fr,de,ja,zh}
-@attribute followersCount real 
+@attribute followersCount real
 @attribute retweetCount real
 @attribute favoriteCount real
 @attribute haveHash {TRUE, FALSE}
@@ -369,7 +368,7 @@ Some records could be as follows:
 92, TRUE, en, 599, 0, 0, FALSE, FALSE
 93, TRUE, en, 603, 0, 0, FALSE, FALSE
 33, FALSE, en, 623, 0, 0, FALSE, FALSE
-
+```
 ## 7\. Other issues
 
 ### News API

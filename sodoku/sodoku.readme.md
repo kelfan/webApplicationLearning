@@ -28,10 +28,27 @@ index.js
 for i to size 
     swipe i with random position 
 
-# 7.HTML pages 
- 
+# 7.HTML pages + js 
+index.html -> main.less -> toolkit.js -> index.js -> 
+
+# 8.reconstruction 
+/src/js
+    index.js : entry and Events 
+    core/
+        toolkit.js : tools
+        generator.js : build solution
+        checker.js : check algorithm
+        sodoku.js : Generate game 
+    ui/
+        grid.js : for squared up 
+        popupnumbers.js : for pop up panel
+
+# run gulp `.\node_modules\.bin\gulp && .\node_modules\.bin\gulp watch`
+
 
 # check algorithm: 
+
+
 
 
 # watch change in less 

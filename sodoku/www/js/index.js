@@ -70,15 +70,32 @@
 "use strict";
 
 
+var Grid = __webpack_require__(1);
+
+var grid = new Grid($("#container")).build().layout();
+
+// const a = Array.from({length: 9}, (v, i) => i);
+// console.log(a);
+// console.log(Toolkit.shuffle(a));
+
+// following for testing
+// const a  = makeMatrix ();
+// a[0][1] = 2;
+// console.log (a);
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var toolkit = __webpack_require__(1);
-
-var matrix = toolkit.makeMatrix();
-
-// console.log(matrix);
+// generate square up
+var Toolkit = __webpack_require__(2);
 
 var Grid = function () {
     function Grid(container) {
@@ -90,7 +107,7 @@ var Grid = function () {
     _createClass(Grid, [{
         key: "build",
         value: function build() {
-            var matrix = toolkit.makeMatrix();
+            var matrix = Toolkit.matrix.makeMatrix();
 
             var rowGroupClasses = ["row_g_top", "row_g_middle", "row_g_bottom"];
             var colGroupClasses = ["col_g_lef", "col_g_center", "col_g_right"];
@@ -122,26 +139,23 @@ var Grid = function () {
     return Grid;
 }();
 
-var grid = new Grid($("#container")).build().layout();
-
-var a = Array.from({ length: 9 }, function (v, i) {
-    return i;
-});
-console.log(a);
-console.log(toolkit.shuffle(a));
-
-// following for testing
-// const a  = makeMatrix ();
-// a[0][1] = 2;
-// console.log (a);
+module.exports = Grid;
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * grid and array related methods
+ * @type {{makeRow(*=): *, makeMatrix(*=): *, shuffle(*): *}}
+ */
 var matrixToolkit = {
     makeRow: function makeRow() {
         var v = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -176,10 +190,97 @@ var matrixToolkit = {
 
             return array;
         }
+    },
+
+
+    /**
+     * check whether a number can be put in a cell
+     * @returns {boolean}
+     */
+    checkFillable: function checkFillable(matrix, n, rowIndex, colIndex) {
+        var row = matrix[rowIndex];
+        var column = this.makeRow().map(function (v, i) {
+            return matrix[i][colIndex];
+        });
+
+        var _boxToolkit$convertTo = boxToolkit.convertToBoxIndex(rowIndex, colIndex),
+            boxIndex = _boxToolkit$convertTo.boxIndex;
+
+        var box = boxToolkit.getBoxCells(matrix, boxIndex);
+        for (var i = 0; i < 9; i++) {
+            if (row[i] === n || column[i] === n || box[i] === n) {
+                return false;
+            }
+        }
+        return true;
     }
 };
 
-module.exports = matrixToolkit;
+/**
+ * coordinate related tools
+ */
+var boxToolkit = {
+    getBoxCells: function getBoxCells(matrix, boxIndex) {
+        var startRowIndex = Math.floor(boxIndex / 3) * 3;
+        var startColIndex = boxIndex % 3 * 3;
+        var result = [];
+        for (var cellIndex = 0; cellIndex < 9; cellIndex++) {
+            var rowIndex = startRowIndex + Math.floor(cellIndex / 3);
+            var colIndex = startColIndex + cellIndex % 3;
+            result.push(matrix[rowIndex][colIndex]);
+        }
+        return result;
+    },
+    convertToBoxIndex: function convertToBoxIndex(rowIndex, colIndex) {
+        return {
+            boxIndex: Math.floor(rowIndex / 3) * 3 + Math.floor(colIndex / 3), // which block
+            cellIndex: rowIndex % 3 * 3 + colIndex % 3 // which cell within the block
+        };
+    },
+    convertFromBoxIndex: function convertFromBoxIndex(boxIndex, cellIndex) {
+        return {
+            rowIndex: Math.floor(boxIndex / 3) * 3 + Math.floor(cellIndex / 3),
+            colIndex: boxIndex % 3 * 3 + cellIndex % 3
+        };
+    }
+};
+
+// tool class
+module.exports = function () {
+    function Toolkit() {
+        _classCallCheck(this, Toolkit);
+    }
+
+    _createClass(Toolkit, null, [{
+        key: "matrix",
+
+        /**
+         * matrix and grid related tools
+         * @returns {{makeRow, (*=): *, makeMatrix, (*=): *, shuffle, (*): *}}
+         */
+        get: function get() {
+            return matrixToolkit;
+        }
+
+        /**
+         * coordinate related tools
+         * @returns {{makeRow, (*=): *, makeMatrix, (*=): *, shuffle, (*): *}}
+         */
+
+    }, {
+        key: "box",
+        get: function get() {
+            return boxToolkit;
+        }
+    }]);
+
+    return Toolkit;
+}();
+
+// for testing
+var generator = new Generator();
+generator.generate();
+console.log(generator.matrix);
 
 /***/ })
 /******/ ]);

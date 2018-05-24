@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    div.bar {
+        display: inline-block;
+        margin-right: 2px;
+        width: 20px;
+        height: 75px; /* We'll override this later */
+        background-color: teal;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+</head>
+<body>
+<div style="display: inline-block;
+            width: 20px;
+            height: 75px;
+            background-color: teal;">
+</div>
+<div class="bar"></div>
+<p class="caption">
+    <select id="country">
+        <img src="logo.png" width="100px" alt="Logo"/>
+    </select>
+</p>
+<div style="height: 75px;"></div>
+<script>
+    var dataset = [5, 10, 15, 20, 25];
+
+    d3.select("body").selectAll("div")
+        .attr("class", "bar") // 为了将我们的div的类设置为ba
+        .classed("bar", true) // 推荐用class来定义被多个元素共享的属性，而只在特例上应用style
+
+    d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter() // 生产绑定数据元素
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function (d) {
+            var barHeight = d * 5;  //Scale up by factor of 5
+            return barHeight + "px";
+        });
+</script>
+</body>
+</html>

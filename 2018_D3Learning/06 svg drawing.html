@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+</head>
+<body>
+<script>
+    //Width and height
+    var w = 500;
+    var h = 50;
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", w)   // <-- Here
+        .attr("height", h); // <-- and here!
+
+    var dataset = [ 5, 10, 15, 20, 25 ];
+
+    var circles = svg.selectAll("circle")
+        .data(dataset)
+        .enter()
+        .append("circle");
+
+    circles.attr("cx", function(d, i) {
+        return (i * 50) + 25; // 这段代码的意思是在所有圆的引用上为每个圆设置cx年属性。我们的数据已经绑定到了circle元素上，所以对于每个circle，值d对应于数据集(5,10,15,20,25)中的某个值。而另一个参数i，也会自动地累加，也就是变成数据点的序号。比如，第1个圆的i为0，第2个为1，依此类推。这里，i的作用是让圆的中心坐标递增，从而从左至右排列，因为i的值是一直增大的。
+    })
+        .attr("cy", h/2) // 其中，h是整个SVG图像的高度，所以h/2是半高。这样的效果是让所有的圆都排列在图像垂直方向的中间。
+        .attr("r", function(d) {
+            return d; // 最后，每个圆的半径r被设置为d，即对应的数据点的值。
+        })
+        .attr("fill", "yellow")
+        .attr("stroke", "orange")
+        .attr("stroke-width", function(d) {
+            return d/2;
+        });
+</script>
+</body>
+</html>

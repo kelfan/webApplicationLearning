@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+</head>
+<body>
+<script>
+    // cite http://pkuwwt.github.io/d3-tutorial-cn/using-your-data.html
+    var dataset = [ 5, 10, 15, 20, 25 ];
+
+    d3.select("body").selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d) { return "the number is "+  d; })
+        .style("color", function(d) {
+            if (d > 15) {   //Threshold of 15
+                return "red";
+            } else {
+                return "green";
+            }
+        });
+</script>
+</body>
+</html>

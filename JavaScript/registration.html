@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<link type='text/css' href="CSS/registration.css" rel='stylesheet'>
+<script src="jquery/registration.js"></script>
+<script src="jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+<div class='signup'>
+<h1>Sign Up Form</h1>
+<p>Please fill in the information below</p>
+
+<form id='form' action='form.txt' method='post' onSubmit='validation();'>
+<label>User Name:</label>
+<input class='reg' id='username' type='text' value=''>
+<label>Password:</label>
+<input class='reg' id='password' type='text' value=''
+pattern='[a-zA-Z0-9~!#$]{6,12}'>
+<label>Repeat Password:</label>
+<input class='reg' id='repeatpassword' type='text' value=''>
+<input id='Rbutton' type='submit' value='Register'>
+</form>
+
+</div>
+<div class='pswdreq'>
+<h2>Password Requirements:<h2>
+<ul>
+	<li>6 to 12 charaters in length</li>
+	<li>At least one lower case letter</li>
+	<li>At least one uppercase letter</li>
+	<li>At least one number</li>
+	<li>At least one sign of "~!#$"</li>
+</ul>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+</head>
+<body>
+<script>
+    // 将下面的数据集想像成路边水果摊每个月售出的苹果的个数
+    var dataset = [ 100, 200, 300, 400, 500 ];
+
+    // var scale = d3.scale.linear();
+    // scale(2.5); //Returns 2.5
+    // scale.domain([100,500]);
+    // scale.range([10,350]);
+
+    var scale = d3.scale.linear()
+        .domain([100, 500]) // 输入范围设置
+        .range([10, 350]); // 输出范围
+
+    scale(100);  //Returns 10
+    scale(300);  //Returns 180
+    scale(500);  //Returns 350
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="d3.v3.min.js"></script>
+</head>
+<body>
+<script>
+    // cite http://pkuwwt.github.io/d3-tutorial-cn/binding-data.html
+
+    var dataset = [ 5, 10, 15, 20, 25 ];
+
+    d3.select("body") // 找到DOM中的body，然后将其引用传递给链中下一个方法
+        .selectAll("p") // 选择DOM中所有段落。因为根本就还不存在任何段落，它会返回一个空选择。将这个空选择对应于”将会现身”的很多段落。
+        .data(dataset) // 对数据值进行计数和解析。我们的数据集中有5个值，所以通过此处的代码都会被执行5次，分别对应于5个值。
+        .enter() // 为了生成新的绑定了数据的元素，你必须使用enter()方法。此方法比较DOM元素和待处理数据个数。如果数据值的个数多于相应的DOM元素，则enter()方法会生成新的占位元素，在每个占位元素上进行余下的操作。每个占位元素都会被传递给链中下一个方法。
+        .append("p") //  接收由enter()选择的(新生成的)点位元素，然后在DOM中插入一个p元素。噢耶！新p元素的引用会被传递给链中下一个方法。
+        .text("New paragraph!"); // 接收新生成的p元素的引用，然后插入(覆盖)文本。
+</script>
+</body>
+</html>

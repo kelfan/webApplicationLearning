@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script type="text/javascript" src="d3.v3.min.js"></script>-->
+</head>
+
+<body>
+<p>2018-3-19,js
+    2018-3-19,android
+    2018-3-19,rdr</p>
+<script>
+    var text = document.getElementsByTagName("p")[0].innerHTML
+    var list = text.split(/\r\n|\n/)
+    var itemList=[];
+    text.split(/\r\n|\n/).forEach(function (value) {
+        itemList.push(value.trim().split(","))
+    })
+    itemList.forEach(function (value) {
+
+    })
+</script>
+</body>
+</html>

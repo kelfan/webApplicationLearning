@@ -211,6 +211,7 @@ var matrixToolkit = {
             if (row[i] === n || column[i] === n || box[i] === n) {
                 return false;
             }
+            continue;
         }
         return true;
     }
@@ -276,11 +277,6 @@ module.exports = function () {
 
     return Toolkit;
 }();
-
-// for testing
-var generator = new Generator();
-generator.generate();
-console.log(generator.matrix);
 
 /***/ })
 /******/ ]);

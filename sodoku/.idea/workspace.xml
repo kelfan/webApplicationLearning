@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js.map" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,77 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sodoku.readme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sodoku.readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="73">
-                <caret line="45" column="70" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="70" />
+              <first_editor relative-caret-position="282">
+                <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="checker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sodoku.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/sodoku.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popupnumbers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toolkit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="190">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -114,7 +58,6 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/src/less/main.less" />
         <option value="$PROJECT_DIR$/src/gulpfile.js" />
-        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
         <option value="$PROJECT_DIR$/src/js/core/sodoku.js" />
         <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
@@ -122,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
         <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
         <option value="$PROJECT_DIR$/src/js/core/generator.js" />
+        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
       </list>
     </option>
   </component>
@@ -249,10 +193,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.generator.js">
+  <component name="RunManager" selected="Node.js.checker.js">
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sodoku/www/index.html" />
+    <configuration name="checker.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="checker.js" working-dir="$PROJECT_DIR$/src/js/core" />
     <configuration name="generator.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="generator.js" working-dir="$PROJECT_DIR$/src/js/core" />
-    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/src/js" />
     <configuration name="toolkit.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="toolkit.js" working-dir="$PROJECT_DIR$/src/js/core" />
     <configuration name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
       <node-interpreter>project</node-interpreter>
@@ -266,18 +210,18 @@
     </configuration>
     <list>
       <item itemvalue="Gulp.js.default" />
-      <item itemvalue="Node.js.index.js" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Node.js.toolkit.js" />
       <item itemvalue="Node.js.generator.js" />
+      <item itemvalue="Node.js.checker.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.checker.js" />
         <item itemvalue="Node.js.generator.js" />
         <item itemvalue="Gulp.js.default" />
         <item itemvalue="Node.js.toolkit.js" />
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +243,7 @@
       <workItem from="1527171214215" duration="526000" />
       <workItem from="1527202682330" duration="1191000" />
       <workItem from="1527480847193" duration="1426000" />
-      <workItem from="1527510634906" duration="341000" />
+      <workItem from="1527510634906" duration="2346000" />
     </task>
     <task id="LOCAL-00001" summary="20180525">
       <created>1527171724149</created>
@@ -308,14 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527171724149</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3-3">
+      <created>1527511008175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527511008175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22206000" />
+    <option name="totallyTimeSpent" value="24211000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1319" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14965464" />
@@ -327,7 +278,7 @@
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39936608" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39910313" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -345,7 +296,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20180525" />
-    <option name="LAST_COMMIT_MESSAGE" value="20180525" />
+    <MESSAGE value="3-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -366,7 +318,7 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -673,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/sodoku.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -732,10 +677,17 @@
     <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="73">
-            <caret line="45" column="70" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="70" />
+          <first_editor relative-caret-position="282">
+            <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>

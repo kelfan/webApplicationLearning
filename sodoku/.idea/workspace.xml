@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/core/sudoku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="3-6 generate sudoku">
       <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sodoku.readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/sodoku.readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/core/checker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/checker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/core/generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/core/sodoku.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/core/toolkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/toolkit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/ui/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ui/grid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/ui/popupnumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ui/popupnumbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/less/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/less/main.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/less/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,71 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sodoku.readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="139">
-                <caret line="56" selection-start-line="56" selection-end-line="56" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toolkit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="76" column="23" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sudoku.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grid.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="27" column="116" selection-start-line="27" selection-start-column="116" selection-end-line="27" selection-end-column="116" />
+            <state relative-caret-position="260">
+              <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -102,8 +39,8 @@
       <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+            <state relative-caret-position="253">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -126,7 +63,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/js/toolkit.js" />
         <option value="$PROJECT_DIR$/www/js/jquery.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/src/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
@@ -135,8 +71,9 @@
         <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
         <option value="$PROJECT_DIR$/src/js/core/checker.js" />
         <option value="$PROJECT_DIR$/src/js/core/sodoku.js" />
-        <option value="$PROJECT_DIR$/src/less/main.less" />
         <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
+        <option value="$PROJECT_DIR$/src/less/main.less" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -190,38 +127,12 @@
               <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
               <item name="sodoku" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
               <item name="sodoku" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
@@ -236,6 +147,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace/webApplicationLearning/sodoku/src/js/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.2" />
@@ -244,13 +156,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\webLearning\sodoku\src\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\webApplicationLearning\sodoku\www\css" />
       <recent name="E:\workspace\webApplicationLearning\sodoku\src\js\core" />
     </key>
   </component>
@@ -316,7 +229,7 @@
       <workItem from="1527171214215" duration="526000" />
       <workItem from="1527202682330" duration="1191000" />
       <workItem from="1527480847193" duration="1426000" />
-      <workItem from="1527510634906" duration="11066000" />
+      <workItem from="1527510634906" duration="13988000" />
     </task>
     <task id="LOCAL-00001" summary="20180525">
       <created>1527171724149</created>
@@ -360,25 +273,32 @@
       <option name="project" value="LOCAL" />
       <updated>1527590518032</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="3-6 generate sudoku">
+      <created>1527593205368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527593205368</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32931000" />
+    <option name="totallyTimeSpent" value="35853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14965464" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14965464" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32884902" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.29446936" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29446936" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32884902" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.54559046" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -400,7 +320,8 @@
     <MESSAGE value="3-3" />
     <MESSAGE value="3-4" />
     <MESSAGE value="3-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-5" />
+    <MESSAGE value="3-6 generate sudoku" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-6 generate sudoku" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -700,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-656">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/jquery.js" />
     <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -753,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -781,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -801,7 +701,28 @@
     <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="27" column="116" selection-start-line="27" selection-start-column="116" selection-end-line="27" selection-end-column="116" />
+          <caret line="27" column="115" selection-start-line="27" selection-start-column="115" selection-end-line="27" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="29" column="92" selection-start-line="29" selection-start-column="92" selection-end-line="29" selection-end-column="92" />
         </state>
       </provider>
     </entry>

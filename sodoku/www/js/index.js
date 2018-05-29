@@ -303,13 +303,28 @@ module.exports = function () {
 
 
 var Grid = __webpack_require__(3);
-var PopupNumbers = __webpack_require__(5);
+var PopupNumbers = __webpack_require__(6);
 
 var grid = new Grid($("#container"));
 grid.build().layout();
 
 var popupNumbers = new PopupNumbers($("#popupNumbers"));
 grid.bindPopup(popupNumbers);
+
+$("#check").on("click", function (e) {
+    if (grid.check()) {
+        alert("success! congratulation!");
+    }
+});
+$("#reset").on("click", function (e) {
+    grid.reset();
+});
+$("#clear").on("click", function (e) {
+    grid.clear();
+});
+$("#rebuild").on("click", function (e) {
+    grid.rebuild();
+});
 
 // const a = Array.from({length: 9}, (v, i) => i);
 // console.log(a);
@@ -335,6 +350,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var Toolkit = __webpack_require__(0);
 var Generator = __webpack_require__(1);
 var Sudoku = __webpack_require__(4);
+var Checker = __webpack_require__(5);
 
 var Grid = function () {
     function Grid(container) {
@@ -386,8 +402,79 @@ var Grid = function () {
         value: function bindPopup(popupNumbers) {
             this._$container.on("click", "span", function (e) {
                 var $cell = $(e.target);
+                if ($cell.is(".fixed")) {
+                    return;
+                }
                 popupNumbers.popup($cell);
             });
+        }
+
+        /**
+         * start a new game
+         */
+
+    }, {
+        key: "rebuild",
+        value: function rebuild() {
+            this._$container.empty();
+            this.build().layout();
+        }
+
+        /**
+         * check user answer's result
+         */
+
+    }, {
+        key: "check",
+        value: function check() {
+            // get data from interface
+            // const $rows = this._$container.children();
+            var data = this._$container.children().map(function (rowIndex, div) {
+                return $(div).children().map(function (colIndex, span) {
+                    return parseInt($(span).text()) || 0;
+                });
+            }).toArray().map(function ($data) {
+                return $data.toArray();
+            });
+
+            // console.log(data);
+
+            var checker = new Checker(data);
+            if (checker.check()) {
+                return true;
+            }
+            // if fail, add mark
+            var marks = checker.matrixMarks;
+            this._$container.children().each(function (rowIndex, div) {
+                $(div).children().each(function (colIndex, span) {
+                    var $span = $(span);
+                    if ($span.is(".fixed") || marks[rowIndex][colIndex]) {
+                        $span.removeClass("error");
+                    } else {
+                        $(span).addClass("error");
+                    }
+                });
+            });
+        }
+
+        /**
+         * reset to initial status
+         */
+
+    }, {
+        key: "reset",
+        value: function reset() {
+            this._$container.find("span:not(.fixed)").removeClass("error mark1 mark2").addClass("empty").text(0);
+        }
+
+        /**
+         * clear wrong mark
+         */
+
+    }, {
+        key: "clear",
+        value: function clear() {
+            this._$container.find("span.error").removeClass("error");
         }
     }]);
 
@@ -455,6 +542,163 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+// check sodoku solution
+function checkArray(array) {
+    var length = array.length;
+    var marks = new Array(length);
+    marks.fill(true);
+
+    for (var i = 0; i < length - 1; i++) {
+        if (!marks[i]) {
+            continue;
+        }
+
+        var v = array[i];
+        // check validation, 0 means not valid, 1-9 means valid
+        if (!v) {
+            marks[i] = false;
+            continue;
+        }
+        // check repetition i+1 ~9 is repeat with i or not
+        for (var j = i + 1; j < length; j++) {
+            if (v === array[j]) {
+                marks[i] = marks[j] = false;
+            }
+        }
+    }
+    return marks;
+}
+
+var Toolkit = __webpack_require__(0);
+
+// input: Matrix, user's finished data, 9 x 9
+// handle: check matrix's row, column and block, and fill marks
+// output: success or not, marks matrix
+module.exports = function () {
+    function Checker(matrix) {
+        _classCallCheck(this, Checker);
+
+        this._matrix = matrix;
+        this._matrixMarks = Toolkit.matrix.makeMatrix(true);
+    }
+
+    _createClass(Checker, [{
+        key: "check",
+        value: function check() {
+            this.checkRows();
+            this.checkCols();
+            this.checkBoxes();
+
+            // check success or not
+            // Array.prototype.every(): return true if every is true, return false if anyone is false
+            this._success = this._matrixMarks.every(function (row) {
+                return row.every(function (mark) {
+                    return mark;
+                });
+            });
+            return this._success;
+        }
+    }, {
+        key: "checkRows",
+        value: function checkRows() {
+
+            for (var rowIndex = 0; rowIndex < 9; rowIndex++) {
+                var row = this._matrix[rowIndex];
+                var marks = checkArray(row);
+
+                for (var colIndex = 0; colIndex < marks.length; colIndex++) {
+                    if (!marks[colIndex]) {
+                        this._matrixMarks[rowIndex][colIndex] = false;
+                    }
+                }
+            }
+        }
+    }, {
+        key: "checkCols",
+        value: function checkCols() {
+            for (var colIndex = 0; colIndex < 9; colIndex++) {
+                var cols = [];
+                for (var rowIndex = 0; rowIndex < 9; rowIndex++) {
+                    cols[rowIndex] = this._matrix[rowIndex][colIndex];
+                }
+
+                var marks = checkArray(cols);
+                for (var _rowIndex = 0; _rowIndex < marks.length; _rowIndex++) {
+                    if (!marks[_rowIndex]) {
+                        this._matrixMarks[_rowIndex][colIndex] = false;
+                    }
+                }
+            }
+        }
+    }, {
+        key: "checkBoxes",
+        value: function checkBoxes() {
+            for (var boxIndex = 0; boxIndex < 9; boxIndex++) {
+                var boxes = Toolkit.box.getBoxCells(this._matrix, boxIndex);
+                var marks = checkArray(boxes);
+                for (var cellIndex = 0; cellIndex < 9; cellIndex++) {
+                    if (!marks[cellIndex]) {
+                        var _Toolkit$box$convertF = Toolkit.box.convertFromBoxIndex(boxIndex, cellIndex),
+                            rowIndex = _Toolkit$box$convertF.rowIndex,
+                            colIndex = _Toolkit$box$convertF.colIndex;
+
+                        this._matrixMarks[rowIndex][colIndex] = false;
+                    }
+                }
+            }
+        }
+    }, {
+        key: "matrixMarks",
+        get: function get() {
+            return this._matrixMarks;
+        }
+    }, {
+        key: "isSuccess",
+        get: function get() {
+            return this._success;
+        }
+    }]);
+
+    return Checker;
+}();
+
+// for testing
+// console.log(checkArray([1,2,3,4,5,6,7,8,9]));
+// console.log(checkArray([1,2,3,4,0,6,7,8,9]));
+// console.log(checkArray([1,2,3,4,5,6,2,8,9]));
+// console.log(checkArray([1,3,3,4,5,6,7,8,9]));
+// console.log(checkArray([1,2,9,4,5,6,7,8,9]));
+
+
+// for testing checker
+// const Generator = require("./generator");
+// const gen = new Generator();
+// gen.generate();
+// const matrix = gen.matrix;
+//
+// const checker = new Checker(matrix);
+// console.log("check result: ", checker.check());
+// console.log(checker.matrixMarks);
+//
+// matrix[1][1] = 0;
+// matrix[2][3] = matrix[3][6] = 5;
+// console.log(matrix);
+//
+// const checker2 = new Checker(matrix);
+// console.log("check result: ", checker2.check());
+// console.log(checker2.matrixMarks);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 // handle pop up panel
 // process:
 // cell --(click)-> popup
@@ -469,7 +713,7 @@ module.exports = function () {
         this._$panel = $panel.hide().remove("hidden");
 
         this._$panel.on("click", "span", function (e) {
-            var $cell = _this._$targetCell;
+            var $cell = _this._targetCell;
             var $span = $(e.target);
 
             // mark1 or mark2 then fill style
@@ -477,18 +721,21 @@ module.exports = function () {
                 if ($cell.hasClass("mark1")) {
                     $cell.removeClass("mark1");
                 } else {
-                    $cell.removeClass("mark2").add("mark1");
+                    $cell.removeClass("mark2");
+                    $cell.add("mark1");
                 }
             } else if ($span.hasClass("mark2")) {
                 if ($cell.hasClass("mark2")) {
                     $cell.removeClass("mark2");
                 } else {
-                    $cell.removeClass("mark1").add("mark2");
+                    $cell.removeClass("mark1");
+                    $cell.add("mark2");
                 }
             } else if ($span.hasClass("empty")) {
                 // empty, cancel number or mark
                 // cancel number and mark
-                $cell.text(0).addClass("empty");
+                $cell.text(0);
+                $cell.addClass("empty");
             } else {
                 // if 1-9, fill the number
                 $cell.removeClass("empty").text($span.text());
@@ -500,7 +747,7 @@ module.exports = function () {
     _createClass(PopupNumbers, [{
         key: "popup",
         value: function popup($cell) {
-            this._$targetCell = $cell;
+            this._targetCell = $cell;
 
             var _$cell$position = $cell.position(),
                 left = _$cell$position.left,

@@ -30,7 +30,7 @@ const Toolkit = require("./toolkit");
 // input: Matrix, user's finished data, 9 x 9
 // handle: check matrix's row, column and block, and fill marks
 // output: success or not, marks matrix
-class Checker {
+module.exports = class Checker {
     constructor(matrix) {
         this._matrix = matrix;
         this._matrixMarks = Toolkit.matrix.makeMatrix(true);
@@ -89,7 +89,7 @@ class Checker {
 
     checkBoxes() {
         for (let boxIndex = 0; boxIndex < 9; boxIndex++) {
-            const boxes = Toolkit.box.getBoxCells(matrix, boxIndex);
+            const boxes = Toolkit.box.getBoxCells(this._matrix, boxIndex);
             const marks = checkArray(boxes);
             for (let cellIndex = 0; cellIndex < 9; cellIndex++) {
                 if (!marks[cellIndex]) {
@@ -111,19 +111,19 @@ class Checker {
 
 
 // for testing checker
-const Generator = require("./generator");
-const gen = new Generator();
-gen.generate();
-const matrix = gen.matrix;
-
-const checker = new Checker(matrix);
-console.log("check result: ", checker.check());
-console.log(checker.matrixMarks);
-
-matrix[1][1] = 0;
-matrix[2][3] = matrix[3][6] = 5;
-console.log(matrix);
-
-const checker2 = new Checker(matrix);
-console.log("check result: ", checker2.check());
-console.log(checker2.matrixMarks);
+// const Generator = require("./generator");
+// const gen = new Generator();
+// gen.generate();
+// const matrix = gen.matrix;
+//
+// const checker = new Checker(matrix);
+// console.log("check result: ", checker.check());
+// console.log(checker.matrixMarks);
+//
+// matrix[1][1] = 0;
+// matrix[2][3] = matrix[3][6] = 5;
+// console.log(matrix);
+//
+// const checker2 = new Checker(matrix);
+// console.log("check result: ", checker2.check());
+// console.log(checker2.matrixMarks);

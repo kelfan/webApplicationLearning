@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="checker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="285">
+              <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -174,11 +172,11 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\webApplicationLearning\sodoku\src\js\core" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\webLearning\sodoku\src\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\webApplicationLearning\sodoku\src\js\core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,7 +241,7 @@
       <workItem from="1527171214215" duration="526000" />
       <workItem from="1527202682330" duration="1191000" />
       <workItem from="1527480847193" duration="1426000" />
-      <workItem from="1527510634906" duration="2346000" />
+      <workItem from="1527510634906" duration="3051000" />
     </task>
     <task id="LOCAL-00001" summary="20180525">
       <created>1527171724149</created>
@@ -259,14 +257,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527511008175</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3-4">
+      <created>1527513343769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527513343769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24211000" />
+    <option name="totallyTimeSpent" value="24916000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14965464" />
@@ -297,7 +302,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20180525" />
     <MESSAGE value="3-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3-3" />
+    <MESSAGE value="3-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="3-4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="285">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -49,6 +49,13 @@ class Grid {
                 "font-size": width < 32 ? `${width /2}px` : "" // change width into half if it is small screen, otherwise no change
             });
     }
+
+    bindPopup(popupNumbers){
+        this._$container.on("click", "span", e => {
+           const $cell=$(e.target);
+           popupNumbers.popup($cell);
+        });
+    }
 }
 
 

@@ -79,6 +79,8 @@ body > * {
 }
 .popup-num {
   padding: 5%;
+  position: absolute;
+  padding-left: 0;
 }
 .popup-num .row > span {
   display: inline-block;
@@ -159,4 +161,3 @@ body > * {
 .dashboard .buttons button:last-child {
   border-right-width: 1px;
 }
-/*# sourceMappingURL=main.css.map */

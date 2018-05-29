@@ -1,5 +1,7 @@
 // generate square up
 const Toolkit = require("../core/toolkit");
+const Generator = require("../core/generator");
+const Sudoku = require("../core/sudoku");
 
 class Grid {
     constructor(container) {
@@ -7,7 +9,14 @@ class Grid {
     }
 
     build() {
-        const matrix = Toolkit.matrix.makeMatrix();
+        const sudoku = new Sudoku();
+        sudoku.make();
+        const matrix = sudoku.puzzleMatrix;
+
+        // const generator = new Generator();
+        // generator.generate();
+        // const matrix = generator.matrix;
+        // const matrix = Toolkit.matrix.makeMatrix();
 
         const rowGroupClasses = ["row_g_top", "row_g_middle", "row_g_bottom"];
         const colGroupClasses = ["col_g_lef", "col_g_center", "col_g_right"];
@@ -16,6 +25,7 @@ class Grid {
             .map((cellValue, colIndex) => {
                 return $("<span>")
                     .addClass(colGroupClasses[colIndex % 3])
+                    .addClass(cellValue ? "fixed" : "empty") // add fixed class if have value, else add empty class
                     .text(cellValue);
             }));
 

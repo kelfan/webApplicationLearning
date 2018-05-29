@@ -38,7 +38,7 @@ index.html -> main.less -> toolkit.js -> index.js ->
         toolkit.js : tools
         generator.js : build solution
         checker.js : check algorithm
-        sodoku.js : Generate game 
+        sudoku.js : Generate game 
     ui/
         grid.js : for squared up 
         popupnumbers.js : for pop up panel

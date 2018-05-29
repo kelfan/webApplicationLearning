@@ -44,7 +44,7 @@ body {
   padding: 5%;
 
   .row {
-    >span {
+    > span {
       display: inline-block;
       cursor: pointer;
       text-align: center;
@@ -59,27 +59,33 @@ body {
       &.col_g_right {
         border-right-width: 1px;
       }
-      &:first-child{
+      &:first-child {
         border-left-width: 2px;
       }
       &:last-child {
         border-right-width: 2px;
       }
+      &.fixed {
+        background: #eeeeee;
+      }
+      &.empty {
+        color: white;
+      }
 
     }
 
     &.row_g_bottom {
-      >span{
+      > span {
         border-bottom-width: 1px;
       }
     }
 
-    &:first-child{
-      >span {
+    &:first-child {
+      > span {
         border-top-width: 2px;
       }
     }
-    &:last-child{
+    &:last-child {
       > span {
         border-bottom-width: 2px;
       }
@@ -99,7 +105,7 @@ body {
   box-shadow: @shadowTop;
   height: 3rem;
 
-  .buttons{
+  .buttons {
     position: absolute;
     bottom: 0;
     left: 0;

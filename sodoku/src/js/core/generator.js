@@ -1,7 +1,7 @@
 // generate sodoku solution
 const Toolkit = require("./toolkit");
 
-class Generator {
+module.exports = class Generator {
 
     generate(){
         while (!this.internalGenerate()){
@@ -60,9 +60,9 @@ class Generator {
         }
         return false;
     }
-}
+};
 
 // for testing
-const generator = new Generator();
-generator.generate();
-console.log(generator.matrix);
+// const generator = new Generator();
+// generator.generate();
+// console.log(generator.matrix);

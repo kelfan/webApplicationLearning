@@ -49,7 +49,24 @@ index.html -> main.less -> toolkit.js -> index.js ->
 # check algorithm: 
 
 
+# translate into typescript process 
+1. add typescript config file "tsconfig.json"
+```sh
+\sodoku\src>yarn add --dev typescript
+\sodoku\src> .\node_modules\.bin\tsc --version
+\sodoku\src> .\node_modules\.bin\tsc --init 
+```
+2. rewrite webpack.config.js to support .ts6
+3. .js -> .ts
+```sh 
+# change extension name into ts
+\sodoku\src\js\core>ren *.js *.ts
+\sodoku\src\js\ui>ren *.js *.ts
+```
+4. use webpack2 
 
+# fix jQuery bug in typescript
+\sodoku\src>yarn add --dev @types/jquery
 
 # watch change in less 
 add gulp task into gulpfile.js 

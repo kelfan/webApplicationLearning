@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * grid and array related methods
  * @type {{makeRow(*=): *, makeMatrix(*=): *, shuffle(*): *}}
@@ -8,12 +10,9 @@ const matrixToolkit = {
         array.fill(v);
         return array;
     },
-
     makeMatrix(v = 0) {
-        return Array.from({length: 9}, () => this.makeRow(v));
-
+        return Array.from({ length: 9 }, () => this.makeRow(v));
     },
-
     /**
      * Fisher-Yates algorithm
      * @param array
@@ -27,7 +26,6 @@ const matrixToolkit = {
             return array;
         }
     },
-
     /**
      * check whether a number can be put in a cell
      * @returns {boolean}
@@ -35,7 +33,7 @@ const matrixToolkit = {
     checkFillable(matrix, n, rowIndex, colIndex) {
         const row = matrix[rowIndex];
         const column = this.makeRow().map((v, i) => matrix[i][colIndex]);
-        const {boxIndex} = boxToolkit.convertToBoxIndex(rowIndex, colIndex);
+        const { boxIndex } = boxToolkit.convertToBoxIndex(rowIndex, colIndex);
         const box = boxToolkit.getBoxCells(matrix, boxIndex);
         for (let i = 0; i < 9; i++) {
             if (row[i] === n
@@ -47,14 +45,11 @@ const matrixToolkit = {
         }
         return true;
     }
-
 };
-
 /**
  * coordinate related tools
  */
 const boxToolkit = {
-
     getBoxCells(matrix, boxIndex) {
         const startRowIndex = Math.floor(boxIndex / 3) * 3;
         const startColIndex = boxIndex % 3 * 3;
@@ -66,14 +61,12 @@ const boxToolkit = {
         }
         return result;
     },
-
     convertToBoxIndex(rowIndex, colIndex) {
         return {
-            boxIndex: Math.floor(rowIndex / 3) * 3 + Math.floor(colIndex / 3), // which block
+            boxIndex: Math.floor(rowIndex / 3) * 3 + Math.floor(colIndex / 3),
             cellIndex: rowIndex % 3 * 3 + colIndex % 3 // which cell within the block
         };
     },
-
     convertFromBoxIndex(boxIndex, cellIndex) {
         return {
             rowIndex: Math.floor(boxIndex / 3) * 3 + Math.floor(cellIndex / 3),
@@ -81,9 +74,8 @@ const boxToolkit = {
         };
     }
 };
-
 // tool class
-module.exports = class Toolkit {
+class Toolkit {
     /**
      * matrix and grid related tools
      * @returns {{makeRow, (*=): *, makeMatrix, (*=): *, shuffle, (*): *}}
@@ -91,7 +83,6 @@ module.exports = class Toolkit {
     static get matrix() {
         return matrixToolkit;
     }
-
     /**
      * coordinate related tools
      * @returns {{makeRow, (*=): *, makeMatrix, (*=): *, shuffle, (*): *}}
@@ -99,8 +90,6 @@ module.exports = class Toolkit {
     static get box() {
         return boxToolkit;
     }
-
-
-};
-
-
+}
+exports.Toolkit = Toolkit;
+exports.default = Toolkit;

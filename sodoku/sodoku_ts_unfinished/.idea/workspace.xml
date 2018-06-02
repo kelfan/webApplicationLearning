@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="1-3 toTypescript">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sodoku.readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/sodoku.readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/core/checker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/checker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/core/generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/core/toolkit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/core/toolkit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/ui/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ui/grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/ui/popupnumbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ui/popupnumbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/lib/inject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/lib/inject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/.bin/acorn.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/.bin/acorn.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/bin/acorn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/acorn.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/acorn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/acorn_loose.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/acorn_loose.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/walk.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/dist/walk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/bin/acorn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/expression.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/identifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/locutil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/expression.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/parseutil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/statement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/loose/tokenize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/lval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/parseutil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/statement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/tokencontext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/tokenize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/tokentype.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/walk/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/node_modules/acorn/src/whitespace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/src/inject.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/acorn-dynamic-import/src/inject.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/lru-cache/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/lru-cache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/lru-cache/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/lru-cache/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/yallist/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/yallist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/yallist/iterator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/yallist/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/cross-spawn/node_modules/yallist/yallist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/end-of-stream/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/end-of-stream/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/node_modules/once/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/node_modules/once/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/node_modules/once/once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/node_modules/once/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/end-of-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/end-of-stream/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AliasPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AliasPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AppendPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/AppendPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordExtensionsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordExtensionsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordMainPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordMainPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ConcordModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/FileKindPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/FileKindPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModuleAppendPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModuleAppendPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModuleKindPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModuleKindPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/NextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/NextPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/NodeJsInputFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/NodeJsInputFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ParsePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ParsePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/Resolver.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/Resolver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ResolverFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ResolverFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ResultPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/ResultPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/TryNextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/TryNextPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/UseFilePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/UseFilePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/concord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/concord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/createInnerCallback.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/createInnerCallback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/forEachBail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/forEachBail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/getInnerRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/getInnerRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/getPaths.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/getPaths.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/globToRegExp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/globToRegExp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/lib/node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/enhanced-resolve/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-less/node_modules/through2/through2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/gulp-util/node_modules/through2/through2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/lru-cache/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/lib/lru-cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/lru-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/test/basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/test/foreach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/test/memory-leak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/lru-cache/test/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/through2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/isarray/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/isarray/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/isarray/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/isarray/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/isarray/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/duplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/lib/_stream_duplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/lib/_stream_passthrough.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/lib/_stream_transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/passthrough.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/readable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/node_modules/readable-stream/writable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/through2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/through2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/lib/post_install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/node_modules/.bin/uglifyjs.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/uglifyjs-webpack-plugin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack-stream/node_modules/.bin/webpack" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack-stream/node_modules/.bin/webpack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack-stream/node_modules/.bin/webpack.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack-stream/node_modules/.bin/webpack.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/bin/config-optimist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/bin/config-yargs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/bin/convert-argv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/bin/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/bin/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/buildin/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/buildin/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/buildin/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/buildin/harmony-module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/buildin/harmony-module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/buildin/module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/buildin/module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/dev-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/log-apply-result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/log-apply-result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/only-dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/only-dev-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/poll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/hot/signal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/hot/signal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/APIPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/APIPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/AmdMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/AmdMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/AsyncDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/AsyncDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/AsyncDependencyToInitialChunkWarning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/AutomaticPrefetchPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/AutomaticPrefetchPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/BannerPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/BannerPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/BasicEvaluatedExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/BasicEvaluatedExpression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/CachePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/CachePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/CaseSensitiveModulesWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/CaseSensitiveModulesWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ChunkRenderError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ChunkRenderError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ChunkTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ChunkTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/CompatibilityPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/CompatibilityPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Compilation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Compilation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Compiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ConstPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ConstPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextExclusionPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextExclusionPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ContextReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DefinePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DefinePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedModuleFactoryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedModuleFactoryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DelegatedPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DependenciesBlockVariable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DependenciesBlockVariable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Dependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Dependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllReferencePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DllReferencePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/DynamicEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/DynamicEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EntryOptionPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EntryOptionPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Entrypoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Entrypoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EnvironmentPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ErrorHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ErrorHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalDevToolModulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalDevToolModulePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalDevToolModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalDevToolModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalSourceMapDevToolModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalSourceMapDevToolModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalSourceMapDevToolPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/EvalSourceMapDevToolPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExportPropertyMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExportPropertyMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExtendedAPIPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExtendedAPIPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalModuleFactoryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalModuleFactoryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ExternalsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagDependencyExportsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagDependencyExportsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagDependencyUsagePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagDependencyUsagePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagInitialModulesAsUsedPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/FlagInitialModulesAsUsedPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/FunctionModulePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/FunctionModulePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/FunctionModuleTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/FunctionModuleTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/HashedModuleIdsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/HashedModuleIdsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotModuleReplacement.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotModuleReplacement.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotModuleReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotModuleReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotUpdateChunkTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/HotUpdateChunkTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/IgnorePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/IgnorePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpChunkTemplatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpExportMainTemplatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpHotUpdateChunkTemplatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpMainTemplate.runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpMainTemplatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/JsonpTemplatePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/LibManifestPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/LibManifestPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/LibraryTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/LibraryTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/LoaderOptionsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/LoaderOptionsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/LoaderTargetPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/LoaderTargetPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MainTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MainTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Module.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleBuildError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleBuildError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleDependencyError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleDependencyError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleDependencyWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleDependencyWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleFilenameHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleFilenameHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleParseError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleParseError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleReason.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleReason.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ModuleWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MovedToPluginWarningPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiCompiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiCompiler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiStats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiWatching.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/MultiWatching.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NamedChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NamedChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NamedModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NamedModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NewWatchingPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NoEmitOnErrorsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NoEmitOnErrorsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NoErrorsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NodeStuffPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NodeStuffPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModuleFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModuleReplacementPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/NormalModuleReplacementPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/OptionsDefaulter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/OptionsDefaulter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ParserHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ParserHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/PrefetchPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/PrefetchPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ProgressPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ProgressPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/ProvidePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/ProvidePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/RawModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/RawModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/RecordIdsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/RecordIdsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/RequestShortener.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/RequestShortener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/RequireJsStuffPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/RequireJsStuffPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/RuleSet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/RuleSet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/SetVarMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/SetVarMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/SingleEntryPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/SingleEntryPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/SizeFormatHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/SizeFormatHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/SourceMapDevToolModuleOptionsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/SourceMapDevToolModuleOptionsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/SourceMapDevToolPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/SourceMapDevToolPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/Template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/TemplatedPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/TemplatedPathPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/UmdMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/UmdMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/UseStrictPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/UseStrictPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WarnCaseSensitiveModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WarnCaseSensitiveModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WatchIgnorePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WatchIgnorePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsApply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsDefaulter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsDefaulter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsValidationError.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/WebpackOptionsValidationError.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/compareLocations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/compareLocations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDDefineDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDDefineDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDDefineDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireArrayDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireArrayDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependenciesBlockParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/AMDRequireDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsRequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsRequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/CommonJsRequireDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ConstDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ConstDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsRequireCall.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextDependencyTemplateAsRequireCall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextElementDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ContextElementDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/DelegatedExportsDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/DelegatedExportsDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/DepBlockHelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyAcceptDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyAcceptDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyAcceptImportDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyAcceptImportDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyCompatibilityDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyCompatibilityDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyDetectionParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyDetectionParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportExpressionDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportExpressionDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportHeaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportHeaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportImportedSpecifierDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportSpecifierDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyExportSpecifierDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyImportSpecifierDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyModulesHelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/HarmonyModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportEagerContextDependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportEagerDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportEagerDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportLazyContextDependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportLazyOnceContextDependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportWeakContextDependency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportWeakDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ImportWeakDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LoaderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LoaderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LocalModuleDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LocalModuleDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LocalModulesHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/LocalModulesHelpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsRequireId.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/ModuleDependencyTemplateAsRequireId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/MultiEntryDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/MultiEntryDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/NullDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/NullDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireContextPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlockParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependenciesBlockParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsureDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsurePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireEnsurePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireHeaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireHeaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludeDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludeDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludeDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireIncludePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveContextDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveContextDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveDependencyParserPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveDependencyParserPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveHeaderDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/RequireResolveHeaderDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/SingleEntryDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/SingleEntryDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/SystemPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/SystemPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/UnsupportedDependency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/UnsupportedDependency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/WebpackMissingModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/WebpackMissingModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/getFunctionExpression.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/dependencies/getFunctionExpression.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/formatLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/formatLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeHotUpdateChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeHotUpdateChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplate.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplate.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplateAsync.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplateAsync.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeSourcePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeSourcePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeTargetPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeTargetPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeWatchFileSystem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/node/NodeWatchFileSystem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/AggressiveMergingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/AggressiveMergingPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/AggressiveSplittingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/AggressiveSplittingPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ChunkModuleIdRangePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ChunkModuleIdRangePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/CommonsChunkPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ConcatenatedModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ConcatenatedModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/DedupePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/EnsureChunkConditionsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/EnsureChunkConditionsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/FlagIncludedChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/FlagIncludedChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/LimitChunkCountPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/LimitChunkCountPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/MergeDuplicateChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/MergeDuplicateChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/MinChunkSizePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/MinChunkSizePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ModuleConcatenationPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/ModuleConcatenationPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/OccurrenceOrderPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/OccurrenceOrderPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/RemoveEmptyChunksPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/RemoveEmptyChunksPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/RemoveParentModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/RemoveParentModulesPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/optimize/UglifyJsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/AssetsOverSizeLimitWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/AssetsOverSizeLimitWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/EntrypointsOverSizeLimitWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/EntrypointsOverSizeLimitWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/NoAsyncChunksWarning.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/NoAsyncChunksWarning.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/SizeLimitsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/performance/SizeLimitsPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/prepareOptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/removeAndDo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/Queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/Queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/Semaphore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/Semaphore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/SortableSet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/SortableSet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/identifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/util/identifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/validateSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/validateSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webpack.web.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webpack.web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerHotUpdateChunkTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerMainTemplate.runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerMainTemplate.runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerMainTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerMainTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerTemplatePlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/lib/webworker/WebWorkerTemplatePlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/.bin/json5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/.bin/json5.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/has-flag/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/has-flag/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/has-flag/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/has-flag/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/supports-color/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/supports-color/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/supports-color/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/supports-color/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/node_modules/supports-color/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/schemas/ajv.absolutePath.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/node_modules/webpack/schemas/ajv.absolutePath.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/node_modules/webpack/schemas/webpackOptionsSchema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="popupnumbers.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sodoku.readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="360">
+                <caret line="83" column="46" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="46" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/js/toolkit.js" />
+        <option value="$PROJECT_DIR$/www/js/jquery.js" />
+        <option value="$PROJECT_DIR$/src/js/core/generator.js" />
+        <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
+        <option value="$PROJECT_DIR$/src/js/core/sodoku.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
+        <option value="$PROJECT_DIR$/src/less/main.less" />
+        <option value="$PROJECT_DIR$/src/js/index.js" />
+        <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
+        <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
+        <option value="$PROJECT_DIR$/src/js/index.ts" />
+        <option value="$PROJECT_DIR$/src/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/js/core/toolkit.ts" />
+        <option value="$PROJECT_DIR$/src/js/core/checker.ts" />
+        <option value="$PROJECT_DIR$/src/js/core/generator.ts" />
+        <option value="$PROJECT_DIR$/src/js/core/sudoku.ts" />
+        <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.ts" />
+        <option value="$PROJECT_DIR$/src/js/ui/grid.ts" />
+        <option value="$PROJECT_DIR$/src/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/gulpfile.js" />
+        <option value="$PROJECT_DIR$/sodoku.readme.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/src/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/src/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="677" />
+    <option name="width" value="633" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sodoku" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sodoku" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace/webApplicationLearning/sodoku/src/js/index.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="8.11.2" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/src/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaScript/jquery" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/src/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\webLearning\sodoku\src\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\webApplicationLearning\sodoku\www\css" />
+      <recent name="E:\workspace\webApplicationLearning\sodoku\src\js\core" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gulp.js.default">
+    <configuration name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/sodoku/www/index.html" />
+    <configuration name="checker.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="checker.js" working-dir="$PROJECT_DIR$/src/js/core" />
+    <configuration name="generator.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="generator.js" working-dir="$PROJECT_DIR$/src/js/core" />
+    <configuration name="index.ts" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/js/index.ts" working-dir="$PROJECT_DIR$/src/js" />
+    <configuration name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/src/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <list>
+      <item itemvalue="Gulp.js.default" />
+      <item itemvalue="Node.js.generator.js" />
+      <item itemvalue="Node.js.checker.js" />
+      <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="Node.js.index.ts" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.ts" />
+        <item itemvalue="Gulp.js.default" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="Node.js.checker.js" />
+        <item itemvalue="Node.js.generator.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="406dde8c-0eaa-4a98-8afb-720bf4808ec7" name="Default" comment="" />
+      <created>1527077104648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527077104648</updated>
+      <workItem from="1527077113902" duration="7679000" />
+      <workItem from="1527142366817" duration="673000" />
+      <workItem from="1527143119201" duration="365000" />
+      <workItem from="1527143523697" duration="1277000" />
+      <workItem from="1527153335113" duration="8728000" />
+      <workItem from="1527171214215" duration="526000" />
+      <workItem from="1527202682330" duration="1191000" />
+      <workItem from="1527480847193" duration="1426000" />
+      <workItem from="1527510634906" duration="23489000" />
+      <workItem from="1527671858893" duration="5788000" />
+      <workItem from="1527678984173" duration="2884000" />
+      <workItem from="1527932424965" duration="1663000" />
+    </task>
+    <task id="LOCAL-00001" summary="20180525">
+      <created>1527171724149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527171724149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="3-3">
+      <created>1527511008175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527511008175</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3-4">
+      <created>1527513343769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527513343769</updated>
+    </task>
+    <task id="LOCAL-00004" summary="3-4">
+      <created>1527573804011</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527573804012</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3-4">
+      <created>1527573824964</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527573824964</updated>
+    </task>
+    <task id="LOCAL-00006" summary="3-5">
+      <created>1527590518032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527590518032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3-6 generate sudoku">
+      <created>1527593205368</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527593205368</updated>
+    </task>
+    <task id="LOCAL-00008" summary="3-7 popup panel">
+      <created>1527596091583</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527596091583</updated>
+    </task>
+    <task id="LOCAL-00009" summary="3-8 popup panel">
+      <created>1527599012786</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527599012786</updated>
+    </task>
+    <task id="LOCAL-00010" summary="3-9 Buttons">
+      <created>1527605712157</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527605712157</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1-3 toTypescript">
+      <created>1527932544984</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1527932544985</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1-3 toTypescript">
+      <created>1527932980028</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1527932980028</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="55689000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14953987" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29446936" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32884902" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.54559046" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32884902" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.29446936" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14953987" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32884902" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.54559046" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32884902" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
+        <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
+        <option value="$PROJECT_DIR$/src/js/core/sudoku.js" />
+        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
+        <option value="$PROJECT_DIR$/src/js/core/generator.js" />
+        <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
+        <option value="$PROJECT_DIR$/src/js/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20180525" />
+    <MESSAGE value="3-3" />
+    <MESSAGE value="3-4" />
+    <MESSAGE value="3-5" />
+    <MESSAGE value="3-6 generate sudoku" />
+    <MESSAGE value="3-7 popup panel" />
+    <MESSAGE value="3-8 popup panel" />
+    <MESSAGE value="3-9 Buttons" />
+    <MESSAGE value="1-3 toTypescript" />
+    <option name="LAST_COMMIT_MESSAGE" value="1-3 toTypescript" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="41" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="this._matrixMarks" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="741">
+            <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="589">
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="589">
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="32" lean-forward="true" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="589">
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="31" lean-forward="true" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/jquery.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="76" column="23" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index_step1.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1634">
+          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="407" column="29" selection-start-line="407" selection-start-column="29" selection-end-line="407" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="101" column="15" lean-forward="true" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ui/grid.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#110#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/generator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/checker.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sodoku.readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="360">
+            <caret line="83" column="46" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node_modules/ts-loader/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/node_modules/ts-loader/dist/instances.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

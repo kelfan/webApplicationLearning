@@ -9,6 +9,7 @@ Reuse of component.
 # 03-style.html
 Have style within React component.
 ![](assets/markdown-img-paste-20180815202359554.png)
+![](assets/markdown-img-paste-20180815202721257.png)
 
 
 # commends

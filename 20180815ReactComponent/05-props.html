@@ -32,9 +32,10 @@
       var Label = React.createClass({
         render: function() {
           return (
-            <Display color={this.props.color}
-              num={this.props.num}
-              size = {this.props.size} />
+            // <Display color={this.props.color}
+            //   num={this.props.num}
+            //   size = {this.props.size} />
+            <Display {...this.props}/>
           )
         }
       });
@@ -42,10 +43,11 @@
     var Shirt = React.createClass({
       render: function() {
         return (
-          <Label color={this.props.color}
-            num = {this.props.num}
-            size = {this.props.size}
-            />
+          // <Label color={this.props.color}
+          //   num = {this.props.num}
+          //   size = {this.props.size}
+          //   />
+          <Label {...this.props}/>
         );
       }
     });

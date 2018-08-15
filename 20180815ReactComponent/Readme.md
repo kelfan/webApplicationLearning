@@ -12,5 +12,12 @@ python -m http.server
 ```
 
 
-# props: properity to accept external data
-# state: internal properity 
+# props: propriety to accept external data
+# state: internal propriety
+
+# children: get {} content
+```html
+this.props.children
+<Com>hello</Com>
+children = hello 
+```

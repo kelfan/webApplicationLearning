@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <style type="text/css">
+        #container {
+            padding: 50px;
+            background-color: #FFF;
+        }
+
+        div div div {
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            background-color: #ffde00;
+            color: #333;
+            font-family: monospace;
+            font-size: 32px;
+            text-align: center;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/babel">
+        var Letter = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                      {this.props.children}
+                    </div>
+                );
+            }
+        });
+        var destination = document.querySelector("#container");
+        ReactDOM.render(
+          <div>
+            <Letter>T</Letter>
+            <Letter>O</Letter>
+            <Letter>M</Letter>
+          </div>,
+          destination
+        )
+
+
+</script>
+</body>
+</html>

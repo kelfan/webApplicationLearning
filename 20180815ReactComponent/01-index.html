@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <style type="text/css">
+      #container {
+        padding: 50px;
+        background: #EEE;
+      }
+      #container h1 {
+        font-size: 144px;
+        font-family: sans-serif;
+        color: #0080a8;
+      }
+    </style>
+    <title></title>
+  </head>
+  <div id="container"></div>
+  <body>
+    <script type="text/babel">
+      var destination = document.querySelector("#container")
+      ReactDOM.render(
+        <h1>hello</h1>,
+        destination
+      )
+    </script>
+  </body>
+</html>

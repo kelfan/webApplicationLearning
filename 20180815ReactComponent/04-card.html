@@ -19,24 +19,44 @@
       var destination = document.querySelector("#container");
       var Square = React.createClass({
         render: function() {
+          var squareStyle = {
+            height: 150,
+            background: '#ff6663'
+          };
+
           return (
-            <p>This is a square</p>
+            <div style={squareStyle}></div>
           );
         }
       });
 
       var Label = React.createClass({
         render: function() {
+          var labelStyle =  {
+            fontFamily: "sans-serif",
+            fontWeight: 'bold',
+            padding: 13,
+            margin: 0
+          }
           return (
-            <p>This  is  a label</p>
+            <div style={labelStyle}>
+              <p>'#ff6663'</p>
+            </div>
           )
         }
       })
 
       var Card = React.createClass({
         render: function() {
+          var cardStyle = {
+            height: 200,
+            width: 150,
+            backgroundColor: '#FFF',
+            WebkitFilter: 'drop-shadow(0px 0px 5px #666)',
+            filter: 'drop-shadow(0px 0px 5px #666)'
+          }
           return (
-            <div>
+            <div style={cardStyle}>
               <Square/>
               <Label/>
             </div>

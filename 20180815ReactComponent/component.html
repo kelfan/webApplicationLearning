@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>React Component</title>
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+  </head>
+  <body>
+      <div id="container"></div>
+      <script type="text/babel">
+        var HelloWorld = React.createClass({
+          render: function(){
+            return (
+              <div>
+                <p>hello world</p>
+              </div>
+            );
+          }
+        })
+        ReactDOM.render(
+          <HelloWorld/>,
+          document.querySelector('#container')
+        )
+      </script>
+  </body>
+</html>

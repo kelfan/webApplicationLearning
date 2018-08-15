@@ -19,6 +19,26 @@
       var destination = document.querySelector("#container");
 
       var Counter = React.createClass({
+        componentWillReceiveProps(newProps) {
+          console.log('componentWillReceiveProps: Counter receive new pros');
+          return ;
+        },
+
+        shouldComponentUpdate(nextProps, nextState) {
+          console.log('shouldComponentUpdate: should counter update');
+          return true;
+        },
+
+        componentWillUpdate(nextProps, nextState) {
+          console.log('componentWillUpdate: counter will update');
+          return ;
+        },
+
+        componentDidUpdate(prevProps, prevState) {
+          console.log('componentDidUpdate: component did update');
+          return ;
+        },
+
         render: function() {
           var textStyle = {
             fontSize: 72,
@@ -68,8 +88,14 @@
             return true;
           }else {
             console.log('component should not update');
+            ReactDOM.unmountComponentAtNode(destination);
             return false;
           }
+        },
+
+        componentWillUnmount: function() {
+          console.log('componentWillUnmount: component is removed from dom');
+          return ;
         },
 
         componentWillUpdate: function() {

@@ -9,8 +9,8 @@
 
 
 # 03-style.html
-- ![](assets/markdown-img-paste-20180815202359554.png)
-- ![](assets/markdown-img-paste-20180815202721257.png)
+![](assets/markdown-img-paste-20180815202359554.png)
+![](assets/markdown-img-paste-20180815202721257.png)
 - Have style within React component.
 
 

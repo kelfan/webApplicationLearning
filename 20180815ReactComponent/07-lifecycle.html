@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <style type="text/css">
+      #container {
+        padding: 50px;
+        background: #FFF;
+      }
+    </style>
+    <title></title>
+  </head>
+  <div id="container"></div>
+  <body>
+    <script type="text/babel">
+      var destination = document.querySelector("#container");
+
+      var Counter = React.createClass({
+        render: function() {
+          var textStyle = {
+            fontSize: 72,
+            fontFamily: 'sans-serif',
+            color: '#333',
+            fontWeight: 'bold'
+          };
+          return (
+            <div style={textStyle}>
+              {this.props.display}
+            </div>
+          );
+        }
+      })
+
+      var CounterParent = React.createClass({
+        getDefaultProps: function() {
+          console.log('getDefaultProps: receive props from outside');
+          return {};
+        },
+
+        getInitialState: function() {
+          console.log('getInitialState: set default state object');
+          return {
+            count: 0
+          };
+        },
+        componentWillMount: function() {
+          console.log('componentWillMount: component will about to mount');
+          return;
+        },
+        componentDidMount: function() {
+          console.log('componentDidMount: component is just mount');
+          return;
+        },
+
+        increase: function() {
+          this.setState({
+            count: this.state.count + 1
+          });
+        },
+
+        shouldComponentUpdate: function(newPros, newState) {
+          console.log('shouldComponentUpdate: should component update?');
+          if (newState.count < 5) {
+            console.log('component should update');
+            return true;
+          }else {
+            console.log('component should not update');
+            return false;
+          }
+        },
+
+        componentWillUpdate: function() {
+          console.log('componentWillUpdate: component is about update');
+          return ;
+        },
+        componentDidUpdate: function() {
+          console.log('componentDidUpdate: component is just updated');
+          return ;
+        },
+        render: function() {
+          var backgroundStyle = {
+            padding: 50,
+            border: '#333 2px dotted',
+            width: 250,
+            height: 100,
+            borderRadius: 10,
+            textAlign: 'center'
+          }
+          var s = 'CounterParent rendering ...'
+          return (
+            <div style={backgroundStyle}>
+              <Counter display={this.state.count}/>
+              <button onClick={this.increase}>+</button>
+            </div>
+          );
+        }
+      });
+
+
+      ReactDOM.render(
+        <CounterParent/>,
+        destination
+      )
+    </script>
+  </body>
+</html>

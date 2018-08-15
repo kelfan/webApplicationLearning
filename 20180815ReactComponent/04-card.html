@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <style type="text/css">
+      #container {
+        padding: 50px;
+        background: #FFF;
+      }
+    </style>
+    <title></title>
+  </head>
+  <div id="container"></div>
+  <body>
+    <script type="text/babel">
+      var destination = document.querySelector("#container");
+      var Square = React.createClass({
+        render: function() {
+          return (
+            <p>This is a square</p>
+          );
+        }
+      });
+
+      var Label = React.createClass({
+        render: function() {
+          return (
+            <p>This  is  a label</p>
+          )
+        }
+      })
+
+      var Card = React.createClass({
+        render: function() {
+          return (
+            <div>
+              <Square/>
+              <Label/>
+            </div>
+          )
+        }
+      })
+
+      ReactDOM.render(
+        <Card/>,
+        destination
+      )
+    </script>
+  </body>
+</html>

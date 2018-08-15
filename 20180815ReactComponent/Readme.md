@@ -11,6 +11,9 @@ Have style within React component.
 ![](assets/markdown-img-paste-20180815202359554.png)
 ![](assets/markdown-img-paste-20180815202721257.png)
 
+# 04-card.html
+- pass values from parent to children
+![](assets/markdown-img-paste-20180815205153951.png)
 
 # commends
 ```sh

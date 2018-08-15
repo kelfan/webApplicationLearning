@@ -15,6 +15,10 @@ Have style within React component.
 - pass values from parent to children
 ![](assets/markdown-img-paste-20180815205153951.png)
 
+# 05-props.html
+- pass values from top to down by {...this.props}
+![](assets/markdown-img-paste-20180815222728618.png)
+
 # commends
 ```sh
 cd C:\Users\chaofanz\Desktop\data\web\webApplicationLearning\20180815ReactComponent
@@ -38,3 +42,8 @@ this.props.children
 <Com>hello</Com>
 children = hello
 ```
+# use {...this.props} to pass from top to down
+05-props.html
+
+# plugins for atom
+https://medium.com/productivity-freak/my-atom-editor-setup-for-js-react-9726cd69ad20

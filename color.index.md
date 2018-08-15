@@ -8,5 +8,6 @@
 ```css
 p {
   font-family: sans-serif;
+  font-family: monospace;
 }
 ```

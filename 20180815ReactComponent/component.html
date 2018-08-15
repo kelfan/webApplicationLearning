@@ -14,13 +14,18 @@
           render: function(){
             return (
               <div>
-                <p>hello world</p>
+                <p>hello, {this.props.greetTarget}</p> 
               </div>
             );
           }
         })
         ReactDOM.render(
-          <HelloWorld/>,
+          <div>
+            <HelloWorld greetTarget='Tom'/>
+            <HelloWorld greetTarget='Jack'/>
+            <HelloWorld greetTarget='Linda'/>
+          </div>
+          ,
           document.querySelector('#container')
         )
       </script>

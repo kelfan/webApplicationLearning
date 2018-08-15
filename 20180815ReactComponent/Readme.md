@@ -10,3 +10,7 @@ run following commend in the index folder of website
 ```py
 python -m http.server
 ```
+
+
+# props: properity to accept external data
+# state: internal properity 

@@ -12,12 +12,18 @@ Have style within React component.
 ![](assets/markdown-img-paste-20180815202721257.png)
 
 # 04-card.html
-- pass values from parent to children
+pass values from parent to children
 ![](assets/markdown-img-paste-20180815205153951.png)
 
 # 05-props.html
-- pass values from top to down by {...this.props}
+pass values from top to down by {...this.props}
 ![](assets/markdown-img-paste-20180815222728618.png)
+
+# 06-state.html
+![](assets/markdown-img-paste-20180815231257491.png)
+- change the state of component
+- use common style by {...commonStyle}
+
 
 # commends
 ```sh

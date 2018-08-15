@@ -19,15 +19,37 @@
       var destination = document.querySelector("#container");
 
       var  LightningCounter = React.createClass({
+        getInitialState: function() {
+          return {
+            strikes: 0
+          };
+        },
+        timeTrick: function() {
+          this.setState({
+            strikes: this.state.strikes + 100
+          })
+        },
+        componentDidMount: function() {
+          setInterval(this.timeTrick, 1000);
+        },
         render: function() {
+          var counterStyle = {
+            color: '#66ffff',
+            fontSize: 50
+          }
+          var count = this.state.strikes.toLocaleString();
           return (
-            <h1>hello world</h1>
+            <h1 style={counterStyle}>{count}</h1>
           );
         }
       });
 
       var LightningCounterDisplay = React.createClass({
         render: function() {
+          var commonStyle = {
+            margin: 0,
+            padding: 0
+          };
           var divStyle = {
             width: 250,
             textAlign: 'center',
@@ -38,9 +60,33 @@
             borderRadius: 10
           };
 
+          var textStyle = {
+            emphasis: {
+              fontSize: 38,
+              ...commonStyle
+            },
+            smallEmphasis:{
+              ...commonStyle
+            },
+            small: {
+              fontSize: 17,
+              opacity: 0.5,
+              ...commonStyle
+            }
+          }
+
           return (
             <div style={divStyle}>
               <LightningCounter/>
+              <h2 style={textStyle.smallEmphasis}>
+                Thunder Hits
+              </h2>
+              <h2 style={textStyle.emphasis}>
+                Our planet
+              </h2>
+              <p style={textStyle.smallEmphasis}>
+                (form the start of this app)
+              </p>
             </div>
           )
         }

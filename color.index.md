@@ -12,6 +12,7 @@
 #297373
 #ff8552
 #a40e4c
+#ffc53a
 ```
 
 # web fonts

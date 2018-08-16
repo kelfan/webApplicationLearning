@@ -41,9 +41,16 @@
             count: 0
           });
         },
-        increase(){
+        increase(e){
+          var currentCount = this.state.count;
+          // if the shift key is holding
+          if (e.shiftKey == true){
+            currentCount += 10;
+          }else{
+            currentCount +=1;
+          }
           this.setState({
-            count: this.state.count + 1
+            count: currentCount
           });
         },
         render() {

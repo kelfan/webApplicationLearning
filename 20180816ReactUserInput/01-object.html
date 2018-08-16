@@ -36,11 +36,20 @@
       });
 
       // jsx object can be variable
-      var theCirle = <Circle bgColor='#F9D240'></Circle>;
+      // var theCircle = <Circle bgColor='#F9D240'></Circle>;
+      // {theCircle}
+
+      function showCircle() {
+        var colors = ['#393E41', '#E94F37', '#1c89bf', '#a1d363'];
+        var ran = Math.floor(Math.random()*colors.length);
+        return <Circle bgColor={colors[ran]}></Circle>;
+      }
 
       ReactDOM.render(
         <div>
-          {theCirle}
+          {showCircle()}
+          {showCircle()}
+          {showCircle()}
         </div>,
         destination
       )

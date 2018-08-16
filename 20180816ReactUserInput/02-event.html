@@ -41,6 +41,11 @@
             count: 0
           });
         },
+        increase(){
+          this.setState({
+            count: this.state.count + 1
+          });
+        },
         render() {
           var backgroundStyle = {
             padding: 50,
@@ -63,7 +68,7 @@
           return(
             <div style={backgroundStyle}>
               <Counter display={this.state.count}></Counter>
-              <button style={buttonStyle}>+</button>
+              <button style={buttonStyle} onClick={this.increase}>+</button>
             </div>
           )
         }

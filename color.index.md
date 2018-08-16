@@ -5,9 +5,13 @@
 #66ffff :light blue
 #F9D240 :light yellow
 #393E41
-#E94F37 :black 
+#E94F37 :black
 #1c89bf
 #a1d363
+#85ffc7
+#297373
+#ff8552
+#a40e4c
 ```
 
 # web fonts

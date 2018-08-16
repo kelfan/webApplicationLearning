@@ -10,6 +10,6 @@
 - holding shift key to add 10 into the counter
 
 # 03-colorizer.html
-
-- control real DOM
--
+![](assets/markdown-img-paste-20180816193752404.png)
+- get user input to change UI
+- use 'ref' to change real DOM

@@ -64,6 +64,9 @@
           this.setState({
             bgColor: this.state.color
           });
+
+          this._input.value = '';
+          this._input.focus();
           e.preventDefault(); // don't let form to submit data to server
         },
 
@@ -72,11 +75,17 @@
             backgroundColor: this.state.bgColor
           };
 
+          var self = this; // access real DOM by this object
+
           return(
             <div className='colorArea'>
               <div style={squareStyle} className='colorSquare'></div>
               <form onSubmit={this.setNewColor}>
                 <input
+                  ref = {function(el) {
+                    // el is the real input element in DOM
+                    self._input = el;
+                  }}
                   onChange={this.colorValue}
                   placeholder="Please enter a color"/>
                 <button type='submit'>Show</button>

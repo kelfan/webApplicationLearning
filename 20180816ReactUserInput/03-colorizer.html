@@ -47,12 +47,40 @@
       var destination = document.querySelector("#container");
 
       var Colorizer = React.createClass({
+        getInitialState(){
+          return {
+            color: '',
+            bgColor: ''
+          };
+        },
+
+        colorValue(e){
+          this.setState({
+            color: e.target.value
+          })
+        },
+
+        setNewColor(e){
+          this.setState({
+            bgColor: this.state.color
+          });
+          e.preventDefault(); // don't let form to submit data to server
+        },
+
         render() {
+          var squareStyle = {
+            backgroundColor: this.state.bgColor
+          };
+
           return(
             <div className='colorArea'>
-              <div className='colorSquare'></div>
-              <input placeholder="Please enter a color"/>
-              <button>Show</button>
+              <div style={squareStyle} className='colorSquare'></div>
+              <form onSubmit={this.setNewColor}>
+                <input
+                  onChange={this.colorValue}
+                  placeholder="Please enter a color"/>
+                <button type='submit'>Show</button>
+              </form>
             </div>
           )
         }

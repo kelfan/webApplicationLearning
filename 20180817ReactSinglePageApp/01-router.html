@@ -32,7 +32,7 @@
         padding: 0;
       }
 
-      ul.header li {
+      ul.header li a {
         color: #fff;
         font-weight: bold;
         text-decoration: none;
@@ -81,19 +81,40 @@
         }
       });
 
+      var Page1 = React.createClass({
+        render() {
+          return(
+            <div>
+              <h2>Alexander Pope</h2>
+              <p>To err is human; to forgive, divine.</p>
+            </div>
+          )
+        }
+      });
+
+      var Page2 = React.createClass({
+        render() {
+          return(
+            <div>
+              <h2>Robert Frost</h2>
+              <p>Two roads diverged in a wood, and I, I took the one less travelled by, and that has made all the difference.</p>
+            </div>
+          )
+        }
+      });
+
       var App  = React.createClass({
         render() {
           return (
             <div>
               <h1>Simple SAP</h1>
               <ul className = "header">
-                <li>William Shakespeare</li>
-                <li>Alexander Pope</li>
-                <li>William Shakespeare</li>
-                <li>Robert Frost</li>
+                <li><Link to='/'>William Shakespeare</Link></li>
+                <li><Link to="/ap">Alexander Pope</Link></li>
+                <li><Link to="/rf">Robert Frost</Link></li>
               </ul>
               <div className="content">
-                <Home></Home>
+                {this.props.children}
               </div>
             </div>
           );
@@ -101,7 +122,12 @@
       });
       ReactDOM.render(
         <Router history={hashHistory}>
-          <Route path='/' component={App}></Route>
+          <Route path='/' component={App}>
+            <IndexRoute component={Home}></IndexRoute>
+            <Route path='ap' component={Page1}/>
+            <Route path='rf' component={Page2}/>
+          </Route>
+
         </Router>,
         destination
       )

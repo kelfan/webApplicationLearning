@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <script src="./js/react-router.min.js"></script>
+
+    </script>
+    <style type="text/css">
+      #container {
+        padding: 50px;
+        background: #FFF;
+      }
+    </style>
+    <title>React Single Page App</title>
+  </head>
+  <div id="container"></div>
+  <body>
+    <script type="text/babel">
+      var destination = document.querySelector("#container");
+
+      var App  = React.createClass({
+        render() {
+          return (
+            <div>
+              <h1>Simple SAP</h1>
+              <ul className = "header">
+                <li>My Best Friend</li>
+                <li>Yip-Yip-Woof!</li>
+                <li>My First Pet</li>
+              </ul>
+              <div></div>
+            </div>
+          );
+        }
+      })
+      ReactDOM.render(
+        <App></App>,
+        destination
+      )
+    </script>
+  </body>
+</html>

@@ -13,6 +13,8 @@
 #ff8552
 #a40e4c
 #ffc53a :middle yellow
+#FFCC00 :yellow
+#111    :black 
 ```
 
 # web fonts
@@ -20,5 +22,7 @@
 p {
   font-family: sans-serif;
   font-family: monospace;
+  font-family: Helvetica, Arial, sans-sans-serif;
+
 }
 ```

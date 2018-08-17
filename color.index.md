@@ -14,7 +14,8 @@
 #a40e4c
 #ffc53a :middle yellow
 #FFCC00 :yellow
-#111    :black 
+#111    :black
+#66ccff :blue
 ```
 
 # web fonts

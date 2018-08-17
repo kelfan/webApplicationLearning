@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./js/react.js"></script>
+    <script src="./js/react-dom.js"></script>
+    <script src="./js/browser.min.js"></script>
+    <style type="text/css">
+      body{
+        padding: 50px;
+        background-color: #66ccff;
+        font-family: sans-serif;
+      }
+
+      .todoListMain .header input {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #fff;
+      }
+
+      .todoListMain .header button {
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px;
+        color: #fff;
+        background-color: #0066ff;
+        border: 2px solid #0066ff;
+      }
+
+      .todoListMain .header button:hover{
+        background-color: #003399;
+        border: 2px solid #003399;
+        cursor: pointer;
+      }
+    </style>
+    <title>To Do List App</title>
+  </head>
+  <div id="container"></div>
+  <body>
+    <script type="text/babel">
+      var destination = document.querySelector("#container");
+
+      var TodoItems = React.createClass({
+        render() {
+          var todoEntries = this.props.entries;
+          function createTasks(item) {
+            return (
+              <li key={item.key}>{item.text}</li>
+            );
+          };
+          var listItems = todoEntries.map(createTasks);
+          return (
+            <ul>
+              {listItems}
+            </ul>
+          );
+        }
+      });
+
+      var TodoList = React.createClass({
+        getInitialState: function() {
+          return {
+            items: []
+          };
+        },
+
+        addItem: function(e) {
+          var itemArray = this.state.items;
+          itemArray.push({
+            text: this._inputElement.value,
+            key: Date.now()
+          });
+          this.setState({
+            items:itemArray
+          });
+          this._inputElement.value = "";
+          this._inputElement.focus();
+          // prevent submit form to backend
+          e.preventDefault();
+        },
+
+        render() {
+          return(
+            <div className="todoListMain">
+              <div className="header">
+                <form onSubmit={this.addItem}>
+                  <input ref={(a) => this._inputElement = a} type="text" placeholder="Please input a task"/>
+                  <button type='submit'>Add</button>
+                </form>
+              </div>
+
+              <TodoItems entries={this.state.items}/>
+            </div>
+          )
+        }
+      })
+      ReactDOM.render(
+        <TodoList></TodoList>,
+        destination
+      )
+    </script>
+  </body>
+</html>

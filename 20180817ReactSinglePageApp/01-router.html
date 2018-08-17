@@ -5,7 +5,8 @@
     <script src="./js/react.js"></script>
     <script src="./js/react-dom.js"></script>
     <script src="./js/browser.min.js"></script>
-    <script src="./js/react-router.min.js"></script>
+    <!-- https://www.bootcdn.cn/react-router/ -->
+    <script src="./js/ReactRouter.min.js"></script>
 
     </script>
     <style type="text/css">
@@ -35,11 +36,15 @@
             </div>
           );
         }
-      })
+      });
       ReactDOM.render(
-        <App></App>,
+        <ReactRouter.Router history={ReactRouter.hashHistory}>
+          <ReactRouter.Route path='/' component={App}></ReactRouter.Route>
+        </ReactRouter.Router>,
         destination
       )
     </script>
+    <!-- // if path is '/' goto the page of {App} -->
+
   </body>
 </html>

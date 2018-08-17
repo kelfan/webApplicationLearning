@@ -53,6 +53,10 @@
       .content li{
         margin-bottom: 10px;
       }
+
+      .active {
+        background-color: #0099FF;
+      }
     </style>
     <title>React Single Page App</title>
   </head>
@@ -109,9 +113,9 @@
             <div>
               <h1>Simple SAP</h1>
               <ul className = "header">
-                <li><Link to='/'>William Shakespeare</Link></li>
-                <li><Link to="/ap">Alexander Pope</Link></li>
-                <li><Link to="/rf">Robert Frost</Link></li>
+                <li><IndexLink activeClassName='active' to='/'>William Shakespeare</IndexLink></li>
+                <li><Link activeClassName='active' to="/ap">Alexander Pope</Link></li>
+                <li><Link activeClassName='active' to="/rf">Robert Frost</Link></li>
               </ul>
               <div className="content">
                 {this.props.children}

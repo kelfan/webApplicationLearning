@@ -70,5 +70,64 @@ after change of package.json to add dependencies
 # webpack.config.js
 bug_fix:
 ```sh
-npm install -g webpack@3.1.0 
+npm install -g webpack@3.1.0
+```
+```js
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    path: './dist',
+    filename: 'bundle.js'
+  }
+}
+```
+
+# index.html
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My first webpack</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript" src="dist/bundle.js">
+
+    </script>
+  </body>
+</html>
+```
+
+# webpack.config.js
+```js
+module.exports = {
+  entry: './app/index.js',
+  output: {
+    path: './dist',
+    filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        // all js file will be handled by babel-loader 
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        query:
+          {
+            presets: ['react', 'es2015']
+          }
+      },
+      {
+        test: /\.css$/,
+        loader: "style!css"
+      },
+      {
+        test: /\.less/,
+        loader: 'style-loader!css-loader!less-loader'
+      }
+    ]
+  }
+}
 ```

@@ -68,3 +68,7 @@ after change of package.json to add dependencies
 ```
 
 # webpack.config.js
+bug_fix:
+```sh
+npm install -g webpack@3.1.0 
+```

@@ -1,12 +1,15 @@
-var webpack = require('webpack')
-var path = require('path')
+var webpack = require('webpack');
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// 'react-hot-loader/patch', // hot reload pages
+// new HtmlWebpackPlugin({ // automatically create index.html
+// template: './index.tpl.html', // template html file for index
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    'react-hot-loader/patch', // hot reload pages
+    'react-hot-loader/patch',
     path.join(__dirname, 'app/index.js')
   ],
   output: {
@@ -15,9 +18,8 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
-    // automatically create index.html
     new HtmlWebpackPlugin({
-      template: './index.tpl.html', // template html file for index
+      template: './index.tpl.html',
       inject: 'body',
       filename: './index.html'
     }),

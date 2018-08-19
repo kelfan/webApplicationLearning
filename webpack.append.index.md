@@ -17,3 +17,6 @@
 # --progress: show the progress
 # --display-modules: show all modules
 # --dispaly-reasons: why use this modules
+
+# html-webpack-plugin: 生产html的
+# hot module replacement: 自动刷新页面中必要的更改

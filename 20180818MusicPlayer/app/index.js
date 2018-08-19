@@ -2,7 +2,7 @@
 import React from 'react'
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import Hello from './components/hello'
+import Root from './root'
 // import './index.less'
 
 // console.log(React.version)
@@ -14,17 +14,17 @@ import Hello from './components/hello'
 // elements inside AppContainer will be hot-reloaded
 render(
   <AppContainer>
-    <Hello />
+    <Root />
   </AppContainer>,
   document.getElementById('root')
 );
 
 if (module.hot) {
-  module.hot.accept('./components/hello', () => {
-    const NewHello = require('./components/hello').default;
+  module.hot.accept('./root', () => {
+    const NewRoot = require('./root').default;
     render(
       <AppContainer>
-        <NewHello />
+        <NewRoot /> 
       </AppContainer>,
       document.getElementById('root')
     );

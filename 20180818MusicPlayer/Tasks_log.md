@@ -110,7 +110,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        // all js file will be handled by babel-loader 
+        // all js file will be handled by babel-loader
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader",
@@ -131,3 +131,4 @@ module.exports = {
   }
 }
 ```
+# webpack.config.js + index.tpl.html + server.js + index.js + hello.js + hello.less -> node server

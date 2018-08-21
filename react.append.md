@@ -37,3 +37,5 @@ render() {
   )
 }
 ```
+
+# jPlayer: plugin to play audios (mp3...) and videos 

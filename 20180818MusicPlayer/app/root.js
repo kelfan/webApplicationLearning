@@ -1,12 +1,13 @@
 import React from 'react';
 import Header from './components/header'
 import Player from './page/player'
-
+import { MUSIC_LIST } from './config/musiclist'
 
 let Root = React.createClass({
   getInitialState: function () {
     return {
-    };
+      currentMusicItem: MUSIC_LIST[0]
+    }
   },
   componentDidMount: function () {
     $('#player').jPlayer({
@@ -26,7 +27,8 @@ let Root = React.createClass({
     return (
       <div>
         <Header />
-        <Player></Player>
+        <Player
+          currentMusicItem={this.state.currentMusicItem}></Player>
       </div>
     )
   }

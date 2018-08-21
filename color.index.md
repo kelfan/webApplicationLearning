@@ -1,6 +1,6 @@
 # webcolors
-```
-#EEE :light grey
+```css
+#EEE    :light grey
 #0080a8 :light blue
 #66ffff :light blue
 #F9D240 :light yellow
@@ -16,6 +16,7 @@
 #FFCC00 :yellow
 #111    :black
 #66ccff :blue
+#2f9842 :green
 ```
 
 # web fonts

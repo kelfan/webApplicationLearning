@@ -33,11 +33,18 @@ let Root = React.createClass({
   componentWillUnmount() {
     $('#jPlayer').unbind($.jPlayer.event.timeupdate);
   },
+  progressChangeHandler(progress){
+    console.log('root', progress);
+
+  },
   render() {
     return(
       <div>
         <Header />
-        <Progress progress={this.state.progress}></Progress>
+        <Progress 
+          progress={this.state.progress} 
+          onProgressChange={this.progressChangeHandler}
+        ></Progress>
       </div>
     )
   }

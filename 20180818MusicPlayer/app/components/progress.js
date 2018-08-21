@@ -5,8 +5,9 @@ let Progress = React.createClass({
   changeProgress(e) {
     let progressBar = this.refs.progressBar;
     let progress = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
-    console.log(progress);
-    
+    // console.log(progress);
+    // It is safer to check whehter it is exists and then use it 
+    this.props.onProgressChange && this.props.onProgressChange(progress);
   }, 
   render(){
     return (

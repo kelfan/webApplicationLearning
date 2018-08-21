@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/header'
 import Progress from './components/progress'
 
-
+let duration = null;
 let Root = React.createClass({
   getInitialState: function() {
     return {
@@ -22,6 +22,7 @@ let Root = React.createClass({
     });
     // bind the play progress to a recall function (refresh the state of the component)
     $('#player').bind($.jPlayer.event.timeupdate, (e) => {
+      duration = e.jPlayer.status.duration;
       this.setState({
         progress: e.jPlayer.status.currentPercentAbsolute
       });
@@ -31,11 +32,11 @@ let Root = React.createClass({
     })
   },
   componentWillUnmount() {
-    $('#jPlayer').unbind($.jPlayer.event.timeupdate);
+    $('#player').unbind($.jPlayer.event.timeupdate);
   },
   progressChangeHandler(progress){
-    console.log('root', progress);
-
+    // console.log('root', progress);
+    $('#player').jPlayer('play', duration * progress);
   },
   render() {
     return(
@@ -44,6 +45,7 @@ let Root = React.createClass({
         <Progress 
           progress={this.state.progress} 
           onProgressChange={this.progressChangeHandler}
+          barColor="#ff0000"
         ></Progress>
       </div>
     )

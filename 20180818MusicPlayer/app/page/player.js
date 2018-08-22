@@ -15,11 +15,18 @@ let Player = React.createClass({
             leftTime: ''
         };
     },
-    playPrev(){
+    playPrev() {
         Pubsub.publish('PLAY_PREV');
     },
-    playNext(){
+    playNext() {
         Pubsub.publish('PLAY_NEXT');
+    },
+    formatTime(time){
+        time = Math.floor(time);
+        let minutes = Math.floor(time/60);
+        let seconds = Math.floor(time % 60);
+        seconds = seconds < 10 ? `0${seconds}`:seconds;
+        return `${minutes}:${seconds}`;
     },
     componentDidMount() {
         // bind the play progress to a recall function (refresh the state of the component)
@@ -27,7 +34,8 @@ let Player = React.createClass({
             duration = e.jPlayer.status.duration;
             this.setState({
                 volume: e.jPlayer.options.volume * 100,
-                progress: e.jPlayer.status.currentPercentAbsolute
+                progress: e.jPlayer.status.currentPercentAbsolute,
+                leftTime: this.formatTime(duration * (1 - e.jPlayer.status.currentPercentAbsolute / 100))
             });
         });
     },
@@ -61,7 +69,7 @@ let Player = React.createClass({
                         <h2 className="music-title">{this.props.currentMusicItem.title}</h2>
                         <h3 className="music-artist mt10">{this.props.currentMusicItem.artist}</h3>
                         <div className="row mt20">
-                            <div className="left-time -col-auto">left time</div>
+                            <div className="left-time -col-auto">-{this.state.leftTime}</div>
                             <div className="volume-container">
                                 <i className="icon-volume rt" style={{ top: 5, left: -5 }}></i>
                                 <div className="volume-wrapper">

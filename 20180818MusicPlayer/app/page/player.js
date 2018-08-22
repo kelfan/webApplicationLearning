@@ -39,7 +39,7 @@ let Player = React.createClass({
         } else {
             $('#player').jPlayer('play');
         }
-        console.log('play');
+        // console.log('play');
         this.setState({
             isPlay: !this.state.isPlay
         });
@@ -47,7 +47,7 @@ let Player = React.createClass({
     render() {
         return (
             <div className="player-page">
-                <h1 className="caption"><Link to="/list">My Music Player &gt;</Link></h1>
+                <h1 className="caption"><Link to="/list">My Music List &gt;</Link></h1>
                 <div className="mt20 row">
                     <div className="controll-wrapper">
                         <h2 className="music-title">{this.props.currentMusicItem.title}</h2>

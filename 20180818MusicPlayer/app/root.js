@@ -4,27 +4,45 @@ import Player from './page/player'
 import MusicList from './page/musiclist'
 import { MUSIC_LIST } from './config/musiclist'
 import { Router, IndexRoute, Link, Route, hashHistory } from "react-router";
+import Pubsub from 'pubsub-js'
+
 
 let App = React.createClass({
   getInitialState: function () {
     return {
       musicList: MUSIC_LIST,
-      currentMusicItem: MUSIC_LIST[2]
+      currentMusicItem: MUSIC_LIST[0]
     }
+  },
+  playMusic(musicItem){
+      $('#player').jPlayer('setMedia', {
+        mp3: musicItem.file 
+      }).jPlayer('play');
+
+      this.setState({
+        currentMusicItem:musicItem
+      }); 
   },
   componentDidMount: function () {
     $('#player').jPlayer({
-      ready: function () {
-        console.log('start');
-        $(this).jPlayer('setMedia', {
-          mp3: 'https://freemusicdownloads.world/wp-content/uploads/2017/05/Justin-Bieber-Sorry-PURPOSE-The-Movement.mp3'
-        }).jPlayer('play');
-      },
       supplied: 'mp3',
       wmode: 'window'
     });
+    this.playMusic(this.state.currentMusicItem);
+    Pubsub.subscribe('DELETE_MUSIC', (msg, musicItem) => {
+      this.setState({
+        musicList:this.state.musicList.filter(item => {
+          return item !== musicItem 
+        })
+      });
+    });
+    Pubsub.subscribe('PLAY_MUSIC', (msg, musicItem) => {
+      this.playMusic(musicItem);
+    });
   },
   componentWillUnmount() {
+    Pubsub.unsubscribe('PLAY_MUSIC');
+    Pubsub.unsubscribe('DELETE_MUSIC');
   },
   render() {
     return (

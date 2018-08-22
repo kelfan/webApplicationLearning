@@ -23,12 +23,30 @@ let App = React.createClass({
         currentMusicItem:musicItem
       }); 
   },
+  playNext(type="next"){
+      let index = this.findMusicIndex(this.state.currentMusicItem);
+      let newIndex = null;
+      let len = this.state.musicList.length;
+      if(type==='next'){
+        newIndex = (index + 1) % len;
+      }else{
+        newIndex = (index - 1 + len) % len; // + len incase of negative number 
+      }
+      this.playMusic(this.state.musicList[newIndex])
+  },
+  findMusicIndex(musicItem){
+      return this.state.musicList.indexOf(musicItem);
+  },
   componentDidMount: function () {
     $('#player').jPlayer({
       supplied: 'mp3',
       wmode: 'window'
     });
     this.playMusic(this.state.currentMusicItem);
+    // listen to event that if the song has played to the end 
+    $('#player').bind($.jPlayer.event.ended, (e) => {
+      this.playNext();
+    });
     Pubsub.subscribe('DELETE_MUSIC', (msg, musicItem) => {
       this.setState({
         musicList:this.state.musicList.filter(item => {
@@ -39,10 +57,19 @@ let App = React.createClass({
     Pubsub.subscribe('PLAY_MUSIC', (msg, musicItem) => {
       this.playMusic(musicItem);
     });
+    Pubsub.subscribe('PLAY_PREV', (msg, musicItem) => {
+      this.playNext('prev');
+    });
+    Pubsub.subscribe('PLAY_NEXT', (msg, musicItem) => {
+      this.playNext('next');
+    });
   },
   componentWillUnmount() {
     Pubsub.unsubscribe('PLAY_MUSIC');
     Pubsub.unsubscribe('DELETE_MUSIC');
+    Pubsub.unsubscribe('PLAY_PREV');
+    Pubsub.unsubscribe('PLAY_NEXT');
+    $('#player').unbind($.jPlayer.event.ended);
   },
   render() {
     return (

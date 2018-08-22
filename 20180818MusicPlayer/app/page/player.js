@@ -1,7 +1,9 @@
 import React from "react";
 import Progress from '../components/progress'
 import './player.less'
-import { Link } from 'react-router';
+import { Link } from 'react-router'
+import Pubsub from 'pubsub-js'
+
 
 let duration = null;
 let Player = React.createClass({
@@ -12,6 +14,12 @@ let Player = React.createClass({
             isPlay: true,
             leftTime: ''
         };
+    },
+    playPrev(){
+        Pubsub.publish('PLAY_PREV');
+    },
+    playNext(){
+        Pubsub.publish('PLAY_NEXT');
     },
     componentDidMount() {
         // bind the play progress to a recall function (refresh the state of the component)
@@ -73,9 +81,9 @@ let Player = React.createClass({
                         </div>
                         <div className="mt35 row">
                             <div>
-                                <i className="icon prev"></i>
+                                <i className="icon prev" onClick={this.playPrev}></i>
                                 <i className={`icon ml20 ${this.state.isPlay ? 'pause' : 'play'}`} onClick={this.play}></i>
-                                <i className="icon next ml20"></i>
+                                <i className="icon next ml20" onClick={this.playNext}></i>
                             </div>
                             <div className="-col-auto">
                                 <i className='icon repeat-cycle' ></i>

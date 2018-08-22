@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from './components/header'
 import Player from './page/player'
+import MusicList from './page/musiclist'
 import { MUSIC_LIST } from './config/musiclist'
 
 let Root = React.createClass({
   getInitialState: function () {
     return {
+      musicList: MUSIC_LIST,
       currentMusicItem: MUSIC_LIST[0]
     }
   },
@@ -27,8 +29,10 @@ let Root = React.createClass({
     return (
       <div>
         <Header />
-        <Player
-          currentMusicItem={this.state.currentMusicItem}></Player>
+        <MusicList
+          currentMusicItem={this.state.currentMusicItem}
+          musicList={this.state.musicList} 
+        ></MusicList>
       </div>
     )
   }
